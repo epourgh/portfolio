@@ -7,8 +7,15 @@
     <title>Emerson Pourghaed</title>
 
     <link href="https://fonts.googleapis.com/css?family=Karla&Fredoka+One" rel="stylesheet">
+
+    <!-- TODO: fix styling that's reliant on bootstrap -->
     <link rel="stylesheet" href="./css/lib/bootstrap-3.3.7.min.css">
     <link rel="stylesheet" href="./css/lib/bootstrap.min.css">
+
+
+    <!-- TODO: change glyph icons to fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
     <link rel="stylesheet" href="./css/style.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,6 +31,7 @@
       <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#first">ABOUT</a></li>
+        <li><a href="#metagenre">METAGENRE</a></li>
         <li><a href="#webdev">WEBSITES</a></li>
         <li><a href="#graphic">MISC</a></li>
       </ul>
@@ -77,6 +85,8 @@
       </span>&nbsp;
       <div class="projectsNavbar" id="projectsNavbar">
          <a href="#first" id="about-nav">ABOUT</a>&nbsp;
+         <span style="vertical-align: text-top; color: #fff;">•</span>
+         <a href="#metagenre" id="webdev-nav">METAGENRE</a>&nbsp;
          <span style="vertical-align: text-top; color: #fff;">•</span> 
          <a href="#webdev" id="webdev-nav">WEBSITES</a>&nbsp;
          <span style="vertical-align: text-top; color: #fff;">•</span> 
@@ -84,7 +94,7 @@
       </div>
     </div>
 
-    <hr>
+    <hr class='hr-styled'>
 
     <div id="first" ></div>
 
@@ -109,7 +119,46 @@
       </span>
     </div>
 
-    <hr>
+    <hr class='hr-styled'>
+
+    <div class="encompass">
+
+      <div id="metagenre"></div>
+
+      <div class="add-twenty-five"></div>
+
+      <div class="tbl-row-intro">
+        <a href="./images.html?location=index&image=metagenre">
+          <div class="tbl-col-front-end-l">
+            <img src="./websites/metagenre.png" class="front-end-img-1">
+          </div>
+        </a>
+
+        <div class="tbl-col-front-end-r">
+          <p class="p-title">Metagenre</p>
+          <ul style="color: #fff; padding-left: 20px;">
+            <li>Site for choosing genres and subgenres for games, books, and other entertainment mediums.</li>
+            <li>Medium genres are compared to each other. Most similar mediums are reocommended to users on individual medium page.</li>
+            <li>Users can also vote on which genre umbrella a subgenre belongs to.</li>
+          </ul>
+          <br>
+          <p><b>Stack:</b> React, Express/Node, MySQL, Sass</p>
+
+          <br>
+
+          <a href="https://github.com/epourgh/metagenre">
+            <p class="github-style">github</p>
+          </a>
+
+          <a href="http://18.225.9.206/">
+            <p class="demo-style">demo</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <hr class='hr-styled'>
 
     <!-- WEB DEVELOPMENT SECTION -->
 
@@ -193,7 +242,7 @@
       </div>
     </div>
 
-    <hr>
+    <hr class='hr-styled'>
 
     <!-- GRAPHIC DESIGN SECTION -->
 
@@ -259,7 +308,7 @@
             </div>
 
 
-            <div id="button-div-open">
+            <!-- <div id="button-div-open">
               <button id="button">SHOW MORE</button>
             </div>
 
@@ -296,7 +345,7 @@
 
                 </div>
               </div>
-            </div>
+            </div> -->
 
             <div id="button-div-close">
               <button id="button">COLLAPSE</button>
@@ -308,7 +357,7 @@
       </div>
     </div>
 
-    <!-- <hr> -->
+    <!-- <hr class='hr-styled'> -->
 
     <!-- TWITTER WIDGET -->
     <!-- <div id="twitter" ></div>

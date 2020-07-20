@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Images</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla&Fredoka+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onclick="goBack()">
+    <a href="#" onclick="goBack()" class="goBack" title="return to index"><i
+            class="fas fa-chevron-left text home"></i></a>
+
+    <a href="#" onclick="goBack()" class="exitBack" title="return to index"><i
+            class="fas fa-times text home"></i></a>
+    
+    <div id="page-container">
+        <div id="image-container" onclick="preventReturnOnClick()"></div>
+    </div>
+
+    <script>
+        var url_string = window.location.href;
+        var url = new URL(url_string);
+        var c = url.searchParams.get("image");
+        var d = url.searchParams.get("location");
+
+        function image() {
+
+            console.log(c);
+
+            //dynamically add an image and set its attribute
+            var img=document.createElement("img");
+            img.src=`./websites/${c}.png`;
+            img.id="picture";
+            img.classList="img-class";
+            var foo = document.getElementById("image-container");
+            foo.appendChild(img);
+        }
+
+        image();
+
+        function goBack() {
+            window.location.href = `./${d}.html#${c}`;
+        }
+
+        function preventReturnOnClick() {
+            event.stopPropagation()
+            console.log('override')
+        }
+
+    </script>
+</body>
+</html>
