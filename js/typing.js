@@ -1,8 +1,7 @@
-// var str = "Website and logo by Emerson Pourghaed";
-// var wording = str.split('');
+
 var duration = 0;
 
-console.log(duration);
+// console.log(duration);
 
 var first = "EMERSON";
 var firstArray = first.split(' ');
@@ -12,12 +11,15 @@ var firstArray = first.split(' ');
 
 for (i = 0; i < firstArray.length; i++) {
   duration += 125;
-  setTimeout('document.getElementById("first-name").innerHTML += "' + firstArray[i] + '";', duration);
+  setTimeout(`document.getElementById("first-name").innerHTML += "${firstArray[i]}";`, duration);
 }
 
-console.log(duration);
+// console.log(duration);
 
-setTimeout('document.getElementById("last-name").innerHTML = "_";', duration);
+const lastNameDom = 'document.getElementById("last-name").innerHTML';
+
+
+setTimeout(`${lastNameDom} = "_";`, duration);
 
 function animateWords(word, duration, deleteText) {
   var lastArray = word.split('');
@@ -26,14 +28,12 @@ function animateWords(word, duration, deleteText) {
 
   for (i = 0; i < lastArray.length; i++) {
     
-    console.log(duration);
+    // console.log(duration);
     duration += 125;
 
-    if (i == 0) {
-      setTimeout('document.getElementById("last-name").innerHTML = "' + lastArray[i] + '";', duration);
-    } else {
-      setTimeout('document.getElementById("last-name").innerHTML += "' + lastArray[i] + '";', duration);
-    }
+    let addition = (i == 0)?'':'+';
+
+    setTimeout(`${lastNameDom}${addition}="${lastArray[i]}";`, duration);
     
   }
 
@@ -42,16 +42,13 @@ function animateWords(word, duration, deleteText) {
     duration += 1000;
 
     for (i = i -1; i !== -1; i--) {
-      console.log(duration);
+      // console.log(duration);
       duration += 125;
       lastArray.pop();
       removeLast = lastArray.join('');
+      removeLast = (removeLast == '') ? '_' :removeLast;
 
-      if (i > 0) {
-        setTimeout('document.getElementById("last-name").innerHTML = "' + removeLast + '";', duration);
-      } else {
-        setTimeout('document.getElementById("last-name").innerHTML = "_";', duration);
-      }
+      setTimeout(`${lastNameDom} = "${removeLast}";`, duration);
 
     }
   }
@@ -61,24 +58,15 @@ function animateWords(word, duration, deleteText) {
 var deleteText = true;
 
 duration = 1000;
-console.log(duration);
+// console.log(duration);
 animateWords("POURGHAED", duration, deleteText);
 
-console.log(duration);
+// console.log(duration);
 duration = 6000;
 animateWords("WEB_DEVELOPER", duration, deleteText);
 
 var deleteText = false;
 
-console.log(duration);
+// console.log(duration);
 duration = 12000;
 animateWords("POURGHAED", duration, deleteText);
-
-/*
-// for when name of site is Applux instead of just Emerson
-
-for (i = 0; i < wording.length; i++) {
-  duration += 75;
-  setTimeout('document.getElementById("createdBy").innerHTML += "' + wording[i] + '";', duration);
-}
-*/
