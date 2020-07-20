@@ -1,13 +1,14 @@
  // gives the navbar a style when  scrolling down in browser
 
-$(document).ready(function() {
-    $(window).on('scroll', function() {
-      if (Math.round($(window).scrollTop()) > 220) {
-        $('.navbar').addClass('scrolled');
-        $('.goHome').addClass('scrolled');
-      } else {
-        $('.navbar').removeClass('scrolled');
-        $('.goHome').removeClass('scrolled');
-      }
-    });
-  });
+const navbar = document.getElementById("navbar");
+const goHome = document.getElementById("goHome");
+
+window.onscroll = function (event) {
+  if (this.scrollY > 220) {
+    navbar.classList = "navbar scrolled";
+    goHome.classList = "goHome scrolled";
+  } else {
+    navbar.classList = "navbar";
+    goHome.classList = "goHome";
+  }
+}
