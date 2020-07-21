@@ -18,19 +18,24 @@
 
     <div class="tbl-row-intro">
         <div class="tbl-col-front-end-l">
-        <img id='web-img'  class="front-end-img-1">
+            <a id="web-img-link">
+                <img id='web-img' class="front-end-img-1">
+            </a>
         </div>
         <div class="tbl-col-front-end-r">
         <p id='web-title' class="p-title"></p>
-        <ul id='web-bullet-points' style="color: #fff;"></ul>
+        <ul id='web-bullet-points'></ul>
 
         <br>
 
         <a id='web-demo'><p class="demo-style">demo</p></a>
+
+        <br class="web-br">
+
         <a id='web-github'><p class="github-style">github</p></a>
 
         <br>
-        <p><b>Stack:</b> <ul id='web-stack' style="color: #fff;"></ul></p>
+        <p><b>Stack:</b> <ul id='web-stack'></ul></p>
         </div>
     </div>
 
@@ -76,7 +81,7 @@
             },
             {
                 title: 'Restaurant',
-                image: 'RestaurantApp.jpg',
+                image: 'restaurant-site.png',
                 demo: 'https://epourgh.github.io/Restaurant/',
                 github: 'https://github.com/epourgh/Restaurant',
                 stack: [
@@ -129,8 +134,8 @@
             },
             {
                 title: 'Houston Map Filter',
-                image: 'google-maps-thin.jpg',
-                demo: '',
+                image: 'google-maps.png',
+                demo: 'https://epourgh.github.io/Neighborhood-Map/',
                 github: 'https://github.com/epourgh/Neighborhood-Map',
                 stack: [
                     'JavaScript',
@@ -173,6 +178,7 @@
         var c = url.searchParams.get("key");
 
         document.getElementById("web-img").src = `./websites/${webObjectLiteral[c].image}`;
+        document.getElementById("web-img-link").href = `./images.html?location=web&image=${webObjectLiteral[c].image}&index=${c}`;
         document.getElementById("web-github").href = webObjectLiteral[c].github;
         document.getElementById("web-demo").href = webObjectLiteral[c].demo;
         document.getElementById("web-title").innerHTML = webObjectLiteral[c].title;

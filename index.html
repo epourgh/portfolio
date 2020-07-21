@@ -7,18 +7,8 @@
     <title>Emerson Pourghaed</title>
 
     <link href="https://fonts.googleapis.com/css?family=Karla&Fredoka+One" rel="stylesheet">
-
-    <!-- TODO: fix styling that's reliant on bootstrap -->
-    <link rel="stylesheet" href="./css/lib/bootstrap-3.3.7.min.css">
-    <link rel="stylesheet" href="./css/lib/bootstrap.min.css">
-
-
-    <!-- TODO: change glyph icons to fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-
     <link rel="stylesheet" href="./css/style.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   </head>
 
@@ -54,14 +44,13 @@
 
       <div id="encompass">
 
-        <div class="add-twenty-five"></div>
-        <span class="logo">
+        <div>
+          <div class="add-twenty-five"></div>
           <h1 id="first-name" class="App-logo header-text-1"></h1>
           <h1 id="last-name" class="header-text-2"></h1>
-        </span>
+        </div>
 
         <br><br>
-        <br><br><br>
 
         <a href="https://github.com/epourgh" id="social-media"><img src="./img/gitHub.svg" class="social-icons"><img src="./img/gitHub_highlight.svg" id="img-top" class="social-icons"></a>
         <a href="https://www.linkedin.com/in/ampourgh/" id="social-media"><img src="./img/linkedIn.svg" class="social-icons"><img src="./img/linkedIn_highlight.svg" id="img-top" class="social-icons"></a>
@@ -86,11 +75,11 @@
       </span>&nbsp;
       <div class="projectsNavbar" id="projectsNavbar">
          <a class="scroll" href="#first" id="about-nav">ABOUT</a>&nbsp;
-         <span style="vertical-align: text-top; color: #fff;">•</span>
+         <span class="navbar-point">•</span>
          <a class="scroll" href="#metagenre" id="webdev-nav">METAGENRE</a>&nbsp;
-         <span style="vertical-align: text-top; color: #fff;">•</span> 
+         <span class="navbar-point">•</span> 
          <a class="scroll" href="#webdev" id="webdev-nav">WEBSITES</a>&nbsp;
-         <span style="vertical-align: text-top; color: #fff;">•</span> 
+         <span class="navbar-point">•</span> 
          <a class="scroll" href="#graphic" id="gfx-nav">MISC</a>
       </div>
     </div>
@@ -112,6 +101,7 @@
             <h2>ABOUT</h2>
             <br>
             <p>Hi! I'm a Web devoper who started out designing CSS templates for message boards and static pages over a decade ago, which translated to my first job as an SEO/web admin for a graphic manufacturer. I had briefly programmed with Python for descriptive statistics in graduate school, eventually directing my interest into learning full stack development.</p>
+            <br>
             <p>I have since developed prokects using PHP and the MERN stack. I have experience using APIs, JSON, SQL and NoSQL for data handling.</p>
 
           </div>
@@ -129,27 +119,36 @@
       <div class="add-twenty-five"></div>
 
       <div class="tbl-row-intro">
-        <a href="./images.html?location=index&image=metagenre">
+        <a href="./images.html?location=index&image=metagenre.png">
           <div class="tbl-col-front-end-l">
-            <img src="./websites/metagenre.png" class="front-end-img-1">
+            <img src="./websites/metagenre.png">
           </div>
         </a>
 
         <div class="tbl-col-front-end-r">
           <p class="p-title">Metagenre</p>
-          <ul style="color: #fff; padding-left: 20px;">
+          <ul id="web-bullet-points">
             <li>Site for choosing genres and subgenres for games, books, and other entertainment mediums.</li>
             <li>Medium genres are compared to each other. Most similar mediums are reocommended to users on individual medium page.</li>
             <li>Users can also vote on which genre umbrella a subgenre belongs to.</li>
           </ul>
           <br>
-          <p><b>Stack:</b> React, Express/Node, MySQL, Sass</p>
+          <p><b>Stack:</b> 
+            <ul id="web-stack">
+              <li class="stack-frontend">React</li>
+              <li class="stack-backend">Express/Node</li>
+              <li class="stack-db">MySQL</li>
+              <li class="stack-css">Sass</li>
+            </ul>
+          </p>
 
           <br>
 
           <a href="https://github.com/epourgh/metagenre">
             <p class="github-style">github</p>
           </a>
+
+          <br class="web-br">
 
           <a href="http://18.225.9.206/">
             <p class="demo-style">demo</p>
@@ -172,9 +171,17 @@
         <h2 style="font-weight: bold; text-align: center;">WEB DEVELOPMENT:</h2>
         <h3 style="margin-top: 0px; text-align: center;">PHP • Python • JavaScript • HTML5 • CSS3</h3>
 
-        <hr style="margin: 30px 20%;">
+        <hr class="hr-styled" style="margin: 30px 20%;">
 
         <div class="container">
+          <div class="item item-3">
+            <a href="./web.html?key=5">
+              <img src="./img/google-maps-thin-col.png" class="image-3">
+              <div class="middle-3">
+                <div class="text-3">MAPS</div>
+              </div>
+            </a>
+          </div>
           <div class="item item-0">
             <a href="./web.html?key=0">
               <img src="./img/usa-auto-col-fixed.png" class="image-0" >
@@ -212,14 +219,6 @@
               <img src="./img/calendar.png" class="image-0" >
               <div class="middle-0">
                 <div class="text-0">CALENDAR</div>
-              </div>
-            </a>
-          </div>
-          <div class="item item-3">
-            <a href="./web.html?key=5">
-              <img src="./img/google-maps-thin-col.png" class="image-3">
-              <div class="middle-3">
-                <div class="text-3">MAPS</div>
               </div>
             </a>
           </div>
@@ -354,7 +353,7 @@
     <!-- Go back up from bottom of page -->
     <div class="chevron">
       <a href="#home" class="goUp">
-        <span class="glyphicon glyphicon-chevron-up text up"></span>
+        <i class="fas fa-chevron-up text home"></i>
       </a>
     </div>
 

@@ -24,6 +24,7 @@
         var url = new URL(url_string);
         var c = url.searchParams.get("image");
         var d = url.searchParams.get("location");
+        var e = url.searchParams.get("index");
 
         function image() {
 
@@ -31,7 +32,7 @@
 
             //dynamically add an image and set its attribute
             var img=document.createElement("img");
-            img.src=`./websites/${c}.png`;
+            img.src=`./websites/${c}`;
             img.id="picture";
             img.classList="img-class";
             var foo = document.getElementById("image-container");
@@ -41,7 +42,11 @@
         image();
 
         function goBack() {
-            window.location.href = `./${d}.html#${c}`;
+            if (d === 'index') {
+                window.location.href = `./${d}.html#${c.split('.', 1)[0]}`;
+            } else {
+                window.location.href = `./${d}.html?key=${e}`;
+            }
         }
 
         function preventReturnOnClick() {
