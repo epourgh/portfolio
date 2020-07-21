@@ -55,6 +55,14 @@
                     'CSS3',
                     'Bootstrap'
                 ],
+                stackColor: [
+                    'stack-backend',
+                    'stack-db',
+                    'stack-deployment',
+                    'stack-html',
+                    'stack-css',
+                    'stack-css'
+                ],
                 content: [
                     'eBay catalog placed into MySQL workbench, displayed onto webpage.',
                     'PHP used to include building blocks of webpage, including how items are displayed without manually editing HTML.'
@@ -74,6 +82,15 @@
                     'HTML5',
                     'CSS3'
                 ],
+                stackColor: [
+                    'stack-backend',
+                    'stack-backend',
+                    'stack-deployment',
+                    'stack-deployment',
+                    'stack-api',
+                    'stack-html',
+                    'stack-css'
+                ],
                 content: [
                     'Backend catalog site with Google account login functionality. Ensures high security authentication.',
                     'User can create categories and a list of items within, with Google icons and names indicating which user created the content.'
@@ -91,6 +108,14 @@
                     'HTML5',
                     'CSS3',
                     'Bootstrap'
+                ],
+                stackColor: [
+                    'stack-frontend',
+                    'stack-frontend',
+                    'stack-frontend',
+                    'stack-html',
+                    'stack-css',
+                    'stack-css'
                 ],
                 content: [
                     'Single page display for restaurant with menus for Restaurant\'s menu, operating hours, and location.',
@@ -111,6 +136,15 @@
                     'CSS3',
                     'Bootstrap'
                 ],
+                stackColor: [
+                    'stack-adobe',
+                    'stack-adobe',
+                    'stack-adobe',
+                    'stack-frontend',
+                    'stack-html',
+                    'stack-css',
+                    'stack-css'
+                ],
                 content: [
                     'Designed logo and category images with the use of Adobe Creative Suite; Photoshop and Illustrator.',
                     'Single page navigation smooth scrolling going from section to section.'
@@ -125,6 +159,11 @@
                     'PHP',
                     'JavaScript',
                     'CSS'
+                ],
+                stackColor: [
+                    'stack-backend',
+                    'stack-frontend',
+                    'stack-css'
                 ],
                 content: [
                     'Calendar for typing what you have done during the day, or are able to be around for.',
@@ -145,6 +184,15 @@
                     'Wikipedia API',
                     'CSS',
                     'HTML'
+                ],
+                stackColor: [
+                    'stack-frontend',
+                    'stack-frontend',
+                    'stack-frontend',
+                    'stack-api',
+                    'stack-api',
+                    'stack-css',
+                    'stack-html'
                 ],
                 content: [
                     'Using Google Maps, placed map markers around the city of Houston of specific locations recommended for locals and tourists to visit.',
@@ -192,9 +240,16 @@
 
         var ul = document.getElementById("web-stack");
 
-        for (var i = 0; i < webObjectLiteral[c].stack.length; i++) { var
-            singleLi=webObjectLiteral[c].stack[i]; var li=document.createElement('li');
-            li.appendChild(document.createTextNode(singleLi)); ul.appendChild(li); 
+        for (var i = 0; i < webObjectLiteral[c].stack.length; i++) { 
+
+            var singleLi=webObjectLiteral[c].stack[i]; 
+            var li=document.createElement('li');
+
+            li.classList.add(webObjectLiteral[c].stackColor[i])
+
+            li.appendChild(document.createTextNode(singleLi)); 
+            ul.appendChild(li); 
+            
         }
     </script>
 </body>
