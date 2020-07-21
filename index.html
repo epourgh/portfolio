@@ -45,8 +45,8 @@
     <span class="wallpaper-front"></span>
     <span class="wallpaper"></span>
 
-    <a href="#home" id="goHome" class="goHome" title="return to top"><span
-        class="glyphicon glyphicon-home text home"></span></a>
+    <a href="#home" id="goHome" class="goHome" title="return to top"><i
+        class="fas fa-home text home"></i></a>
 
     <!-- <img src="./img/portrait.svg" class="portrait" id="portrait"> -->
 
@@ -72,7 +72,8 @@
 
         <span class="scrolldown">
           <span class="scroll_btn border">
-            <a href="#first" id="scroll-down"><img src="./img/scroll.gif" style="visibility: hidden;"></a>
+            <a href="#first" id="scroll-down" class="scroll"><img src="./img/scroll.gif"
+                style="visibility: hidden;"></a>
           </span>
         </span>
 
@@ -81,16 +82,16 @@
 
     <div class="navbar" id="navbar">
       <span class="home-button">
-        <a href="#home">HOME</a>
+        <a class="scroll" href="#home">HOME</a>
       </span>&nbsp;
       <div class="projectsNavbar" id="projectsNavbar">
-         <a href="#first" id="about-nav">ABOUT</a>&nbsp;
+         <a class="scroll" href="#first" id="about-nav">ABOUT</a>&nbsp;
          <span style="vertical-align: text-top; color: #fff;">•</span>
-         <a href="#metagenre" id="webdev-nav">METAGENRE</a>&nbsp;
+         <a class="scroll" href="#metagenre" id="webdev-nav">METAGENRE</a>&nbsp;
          <span style="vertical-align: text-top; color: #fff;">•</span> 
-         <a href="#webdev" id="webdev-nav">WEBSITES</a>&nbsp;
+         <a class="scroll" href="#webdev" id="webdev-nav">WEBSITES</a>&nbsp;
          <span style="vertical-align: text-top; color: #fff;">•</span> 
-         <a href="#graphic" id="gfx-nav">MISC</a>
+         <a class="scroll" href="#graphic" id="gfx-nav">MISC</a>
       </div>
     </div>
 
@@ -175,7 +176,7 @@
 
         <div class="container">
           <div class="item item-0">
-            <a href="./websites.html#auto">
+            <a href="./web.html?key=0">
               <img src="./img/usa-auto-col-fixed.png" class="image-0" >
               <div class="middle-0">
                 <div class="text-0">USASEATCOVERS</div>
@@ -183,7 +184,7 @@
             </a>
           </div>
           <div class="item item-0">
-            <a href="./websites.html#catalog">
+            <a href="./web.html?key=1">
               <img src="./img/catalog-col.png" class="image-0" >
               <div class="middle-0">
                 <div class="text-0">CATALOG</div>
@@ -191,7 +192,7 @@
             </a>
           </div>
           <div class="item item-1">
-            <a href="./websites.html#restaurant">
+            <a href="./web.html?key=2">
               <img src="./img/RestaurantApp-col.png" class="image-1">
               <div class="middle-1">
                 <div class="text-1">RESTAURANT</div>
@@ -199,7 +200,7 @@
             </a>
           </div>
           <div class="item item-0">
-            <a href="./websites.html#az">
+            <a href="./web.html?key=3">
               <img src="./img/a-z-col-fixed.png" class="image-0" >
               <div class="middle-0">
                 <div class="text-0">A TO Z</div>
@@ -207,7 +208,7 @@
             </a>
           </div>
           <div class="item item-0">
-            <a href="./websites.html#calendar">
+            <a href="./web.html?key=4">
               <img src="./img/calendar.png" class="image-0" >
               <div class="middle-0">
                 <div class="text-0">CALENDAR</div>
@@ -215,28 +216,12 @@
             </a>
           </div>
           <div class="item item-3">
-            <a href="./websites.html#google">
+            <a href="./web.html?key=5">
               <img src="./img/google-maps-thin-col.png" class="image-3">
               <div class="middle-3">
                 <div class="text-3">MAPS</div>
               </div>
             </a>
-          </div>
-          <div class="item item-2">
-            <a href="./websites.html#hoge">
-              <img src="./img/hoge-col.png" class="image-2">
-              <div class="middle-2">
-                <div class="text-2">PORTFOLIO</div>
-              </div>
-            </a>
-          </div>
-          <div class="item item-4">
-            <a href="./websites.html#nous">
-            <img src="./img/nous-col.png" class="image-4">
-            <div class="middle-4">
-              <div class="text-4">NOUS</div>
-            </div>
-           </a>
           </div>
         </div>
       </div>
@@ -375,6 +360,7 @@
 
   </body>
 
+  <script src="./js/scroll.js"></script>
   <script src="./js/typing.js"></script>
   <script src="./js/navbar-change.js"></script>
   <script src="./js/animate.js"></script>
