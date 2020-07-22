@@ -27,9 +27,7 @@
       </ul>
     </span>
 
-    <nav id="mobile-nav">
-
-    </nav>
+    <nav id="mobile-nav"></nav>
 
 
     <span class="wallpaper-front"></span>
@@ -116,17 +114,24 @@
 
       <div id="metagenre"></div>
 
-      <div class="add-twenty-five"></div>
+      <div class="add-twenty"></div>
 
       <div class="tbl-row-intro">
-        <a href="./images.html?location=index&image=metagenre.png">
-          <div class="tbl-col-front-end-l">
-            <img src="./websites/metagenre.png">
-          </div>
-        </a>
 
-        <div class="tbl-col-front-end-r">
-          <p class="p-title">Metagenre</p>
+        <div class="tbl-col-front-end-l tbl-col-metagenre-l">
+          <a id="main-img-enlarge" href="./images.html?location=index&image=metagenre_1.png">
+            <img id="main-img" src="./websites/metagenre_1.png">
+          </a>
+          <div style="padding: 0 10%">
+            <img src="./websites/metagenre_1.png" onclick="changeImage('metagenre_1.png');" style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
+            <img src="./websites/metagenre_2.png" onclick="changeImage('metagenre_2.png');" style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
+            <img src="./websites/metagenre_3.png" onclick="changeImage('metagenre_3.png');" style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
+          </div>
+        </div>
+        
+        <div class="tbl-col-front-end-r tbl-col-metagenre-r">
+          <p class="p-title"><i style="background: rgb(218, 105, 0); padding: 5px 10px;" class="fas fa-thumbtack"></i> Metagenre</p>
+          <hr class='hr-styled' style="margin: 10px">
           <ul id="web-bullet-points">
             <li>Site for choosing genres and subgenres for games, books, and other entertainment mediums.</li>
             <li>Medium genres are compared to each other. Most similar mediums are reocommended to users on individual medium page.</li>
@@ -147,15 +152,16 @@
 
           <br>
 
-          <a href="https://github.com/epourgh/metagenre">
-            <p class="github-style">github</p>
-          </a>
+          <p>
+            <b>External links:</b>
 
-          <br class="web-br">
+            <ul id="web-ext-showcase">
+              <li><a class="github-style" href="https://github.com/epourgh/metagenre">github <i style="font-size: .8em" class="fas fa-external-link-alt"></i></a></li>
+              <li><a class="demo-style" href="http://18.225.9.206/">demo <i style="font-size: .8em" class="fas fa-external-link-alt"></i></a></li>
+            </ul>
 
-          <a href="http://18.225.9.206/">
-            <p class="demo-style">demo</p>
-          </a>
+          </p>
+
         </div>
       </div>
     </div>
@@ -361,7 +367,14 @@
     </div>
 
   </body>
+  <script>
+    function changeImage(value) {
+      console.log(value)
+      document.getElementById("main-img").src = `./websites/${value}`;
+      document.getElementById("main-img-enlarge").href = `./images.html?location=index&image=${value}`;
 
+    }
+  </script>
   <script src="./js/scroll.js"></script>
   <script src="./js/typing.js"></script>
   <script src="./js/navbar-change.js"></script>
