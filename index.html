@@ -21,14 +21,13 @@
       <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#first">ABOUT</a></li>
-        <li><a href="#metagenre">METAGENRE</a></li>
+        <li><a href="#metagenre">SHOWCASE#1</a></li>
         <li><a href="#webdev">WEBSITES</a></li>
         <li><a href="#graphic">MISC</a></li>
       </ul>
     </span>
 
     <nav id="mobile-nav"></nav>
-
 
     <span class="wallpaper-front"></span>
     <span class="wallpaper"></span>
@@ -74,7 +73,7 @@
       <div class="projectsNavbar" id="projectsNavbar">
          <a class="scroll" href="#first" id="about-nav">ABOUT</a>&nbsp;
          <span class="navbar-point">•</span>
-         <a class="scroll" href="#metagenre" id="webdev-nav">METAGENRE</a>&nbsp;
+         <a class="scroll" href="#metagenre" id="webdev-nav">SHOWCASE #1</a>&nbsp;
          <span class="navbar-point">•</span> 
          <a class="scroll" href="#webdev" id="webdev-nav">WEBSITES</a>&nbsp;
          <span class="navbar-point">•</span> 
@@ -89,7 +88,7 @@
     <div id="about">
       <span id="about-span">
 
-        <div class="abt-video" style="text-align: center;">
+        <div class="abt-img">
           <img src="./img/laptop.png">
         </div>
 
@@ -97,10 +96,15 @@
           <div style="text-align: center;">
 
             <h2>ABOUT</h2>
-            <br>
-            <p>Hi! I'm a Web devoper who started out designing CSS templates for message boards and static pages over a decade ago, which translated to my first job as an SEO/web admin for a graphic manufacturer. I had briefly programmed with Python for descriptive statistics in graduate school, eventually directing my interest into learning full stack development.</p>
-            <br>
-            <p>I have since developed prokects using PHP and the MERN stack. I have experience using APIs, JSON, SQL and NoSQL for data handling.</p>
+            <ul>
+              <li>Hi! I'm a Web devoper who started out designing CSS templates for message boards and static pages over
+                a decade ago, which translated to my first job as an SEO/web admin for a graphic manufacturer. I had
+                briefly programmed with Python for descriptive statistics in graduate school, eventually directing my
+                interest into learning full stack development.</li>
+              <li>I have since developed prokects using PHP and the MERN stack. I have experience using APIs, JSON, SQL
+                and NoSQL for data handling.</li>
+            </ul>
+            <br><br><br>
 
           </div>
         </div>
@@ -120,16 +124,23 @@
 
         <div class="tbl-col-front-end-l tbl-col-metagenre-l">
           <a id="main-img-enlarge" href="./images.html?location=index&image=metagenre_1.png">
-            <img id="main-img" src="./websites/metagenre_1.png">
+            <img id="main-img" src="./img/websites/metagenre_1.png">
           </a>
           <div style="padding: 0 10%">
-            <img src="./websites/metagenre_1.png" onclick="changeImage('metagenre_1.png');" style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
-            <img src="./websites/metagenre_2.png" onclick="changeImage('metagenre_2.png');" style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
-            <img src="./websites/metagenre_3.png" onclick="changeImage('metagenre_3.png');" style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
+            <img src="./img/websites/metagenre_1.png" onclick="changeImage('metagenre_1.png');" style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
+            <img src="./img/websites/metagenre_2.png" onclick="changeImage('metagenre_2.png');"
+              style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
+            <img src="./img/websites/metagenre_3.png" onclick="changeImage('metagenre_3.png');"
+              style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
           </div>
         </div>
         
         <div class="tbl-col-front-end-r tbl-col-metagenre-r">
+
+          <p style="font-size: .5em; color: #fff">
+            SHOWCASE #1:
+          </p>
+
           <p class="p-title"><i style="background: rgb(218, 105, 0); padding: 5px 10px;" class="fas fa-thumbtack"></i> Metagenre</p>
           <hr class='hr-styled' style="margin: 10px">
           <ul id="web-bullet-points">
@@ -244,109 +255,45 @@
 
     <div id="gfx">
       <div id="encompass-gfx" class="encompass-graphic">
-        <h2 style="text-align: center;">ICONS & BANNERS</h2>
-        <h3 style="margin-top: 0px; text-align: center;">Adobe Creative Suite • Photoshop • Illustrator</h3>
-        <!-- Change table height in mobile mode -->
-          <div style="padding: 30px;">
+        <h2 style="font-weight: bold; text-align: center;">MISC:</h2>
+        <h3 style="margin-top: 0px; text-align: center;">Miscellaneous work on CodePen</h3>
 
-            <div class="tbl-row-intro">
-              <div class="tbl-col-gfx">
-                <img src="./icons/wine.svg" class="graphic-img">
+        <hr class="hr-styled" style="margin: 30px 20%;">
+
+        <div class="container">
+          <div class="item item-3">
+            <a href="https://codepen.io/ampourgh/pen/QWwEwOo">
+              <img src="./img/misc/shop.png" class="image-3">
+              <div class="middle-3">
+                <div class="text-3">SHOP <i style="font-size: .8em" class="fas fa-external-link-alt"></i></div>
               </div>
-              <div class="tbl-col-gfx">
-                <img src="./icons/beauty.svg" class="graphic-img">
+            </a>
+          </div>
+          <div class="item item-0">
+            <a href="https://codepen.io/ampourgh/pen/pooBvEv">
+              <img src="./img/misc/switch.png" class="image-0">
+              <div class="middle-0">
+                <div class="text-0">SWITCH <i style="font-size: .8em" class="fas fa-external-link-alt"></i></div>
               </div>
-              <div class="tbl-col-gfx">
-                <img src="./icons/cafe.svg" class="graphic-img">
+            </a>
+          </div>
+          <div class="item item-0">
+            <a href="https://codepen.io/ampourgh/pen/BaNzvxB">
+              <img src="./img/misc/percentage.png" class="image-0">
+              <div class="middle-0">
+                <div class="text-0">PERCENT <i style="font-size: .8em" class="fas fa-external-link-alt"></i></div>
               </div>
-              <div class="tbl-col-gfx">
-                <img src="./icons/dining.svg" class="graphic-img">
+            </a>
+          </div>
+          <div class="item item-0">
+            <a href="https://codepen.io/ampourgh/pen/MWYKPqQ">
+              <img src="./img/misc/drag.png" class="image-0">
+              <div class="middle-0">
+                <div class="text-0">DRAG <i style="font-size: .8em" class="fas fa-external-link-alt"></i></div>
               </div>
-              <div class="tbl-col-gfx">
-                <img src="./icons/medical.svg" class="graphic-img">
-              </div>
-              <div class="tbl-col-gfx">
-                <img src="./icons/earth.svg" class="graphic-img">
-              </div>
-            </div>
-
-            <div class="tbl-row-intro mobile-display">
-              <div class="tbl-col-gfx-2">
-                <img src="./designs/amnesiac.jpg" class="graphic-img">
-              </div>
-              <div class="tbl-col-gfx-2">
-                <img src="./designs/mechanical.jpg" class="graphic-img">
-              </div>
-              <div class="tbl-col-gfx-2">
-                <img src="./designs/mitipurr.jpg" class="graphic-img">
-              </div>
-              <div class="tbl-col-gfx-2">
-                <img src="./designs/tent.jpg" class="graphic-img">
-              </div>
-              <div class="tbl-col-gfx-2">
-                <img src="./designs/starwarspub.jpg" class="graphic-img">
-              </div>
-            </div>
-
-            <div class="tbl-row-intro mobile-display">
-
-              <div class="tbl-col-gfx-40">
-                <img src="./designs/banner.png" class="graphic-img">
-              </div>
-
-              <div class="tbl-col-gfx-40">
-                <img src="./designs/nothing.png" class="graphic-img">
-              </div>
-
-            </div>
-
-
-            <!-- <div id="button-div-open">
-              <button id="button">SHOW MORE</button>
-            </div>
-
-            <div id="wrapper" class="open">
-              <div id="list">
-
-                <div class="tbl-row-intro">
-                  <div class="tbl-col-gfx-2">
-                    <img src="./designs/amnesiac.jpg" class="graphic-img">
-                  </div>
-                  <div class="tbl-col-gfx-2">
-                    <img src="./designs/mechanical.jpg" class="graphic-img">
-                  </div>
-                  <div class="tbl-col-gfx-2">
-                    <img src="./designs/mitipurr.jpg" class="graphic-img">
-                  </div>
-                  <div class="tbl-col-gfx-2">
-                    <img src="./designs/tent.jpg" class="graphic-img">
-                  </div>
-                  <div class="tbl-col-gfx-2">
-                    <img src="./designs/starwarspub.jpg" class="graphic-img">
-                  </div>
-                </div>
-
-                <div class="tbl-row-intro">
-
-                  <div class="tbl-col-gfx-40">
-                    <img src="./designs/banner.png" class="graphic-img">
-                  </div>
-
-                  <div class="tbl-col-gfx-40">
-                    <img src="./designs/nothing.png" class="graphic-img">
-                  </div>
-
-                </div>
-              </div>
-            </div> -->
-
-            <div id="button-div-close">
-              <button id="button">COLLAPSE</button>
-            </div>
-
+            </a>
           </div>
         </div>
-        <br>
       </div>
     </div>
 
@@ -370,7 +317,7 @@
   <script>
     function changeImage(value) {
       console.log(value)
-      document.getElementById("main-img").src = `./websites/${value}`;
+      document.getElementById("main-img").src = `./img/websites/${value}`;
       document.getElementById("main-img-enlarge").href = `./images.html?location=index&image=${value}`;
 
     }

@@ -54,7 +54,7 @@
         var url = new URL(url_string);
         var c = url.searchParams.get("key");
 
-        document.getElementById("web-img").src = `./websites/${webObjectLiteral[c].image}`;
+        document.getElementById("web-img").src = `./img/websites/${webObjectLiteral[c].image}`;
         document.getElementById("web-img-link").href = `./images.html?location=web&image=${webObjectLiteral[c].image}&index=${c}`;
         document.getElementById("web-github").href = webObjectLiteral[c].github;
         document.getElementById("web-demo").href = webObjectLiteral[c].demo;

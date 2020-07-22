@@ -1,4 +1,156 @@
 ```html
+    <!-- GRAPHIC DESIGN SECTION -->
+
+    <!-- Navbar smooth scrolling -->
+    <div id="graphic" ></div>
+
+    <div id="gfx">
+      <div id="encompass-gfx" class="encompass-graphic">
+        <h2 style="text-align: center;">ICONS & BANNERS</h2>
+        <h3 style="margin-top: 0px; text-align: center;">Adobe Creative Suite • Photoshop • Illustrator</h3>
+        <!-- Change table height in mobile mode -->
+          <div style="padding: 30px;">
+
+            <div class="tbl-row-intro">
+              <div class="tbl-col-gfx">
+                <img src="./icons/wine.svg" class="graphic-img">
+              </div>
+              <div class="tbl-col-gfx">
+                <img src="./icons/beauty.svg" class="graphic-img">
+              </div>
+              <div class="tbl-col-gfx">
+                <img src="./icons/cafe.svg" class="graphic-img">
+              </div>
+              <div class="tbl-col-gfx">
+                <img src="./icons/dining.svg" class="graphic-img">
+              </div>
+              <div class="tbl-col-gfx">
+                <img src="./icons/medical.svg" class="graphic-img">
+              </div>
+              <div class="tbl-col-gfx">
+                <img src="./icons/earth.svg" class="graphic-img">
+              </div>
+            </div>
+
+            <div class="tbl-row-intro mobile-display">
+              <div class="tbl-col-gfx-2">
+                <img src="./designs/amnesiac.jpg" class="graphic-img">
+              </div>
+              <div class="tbl-col-gfx-2">
+                <img src="./designs/mechanical.jpg" class="graphic-img">
+              </div>
+              <div class="tbl-col-gfx-2">
+                <img src="./designs/mitipurr.jpg" class="graphic-img">
+              </div>
+              <div class="tbl-col-gfx-2">
+                <img src="./designs/tent.jpg" class="graphic-img">
+              </div>
+              <div class="tbl-col-gfx-2">
+                <img src="./designs/starwarspub.jpg" class="graphic-img">
+              </div>
+            </div>
+
+            <div class="tbl-row-intro mobile-display">
+
+              <div class="tbl-col-gfx-40">
+                <img src="./designs/banner.png" class="graphic-img">
+              </div>
+
+              <div class="tbl-col-gfx-40">
+                <img src="./designs/nothing.png" class="graphic-img">
+              </div>
+
+            </div>
+
+
+            <div id="button-div-open">
+              <button id="button">SHOW MORE</button>
+            </div>
+
+            <div id="wrapper" class="open">
+              <div id="list">
+
+                <div class="tbl-row-intro">
+                  <div class="tbl-col-gfx-2">
+                    <img src="./designs/amnesiac.jpg" class="graphic-img">
+                  </div>
+                  <div class="tbl-col-gfx-2">
+                    <img src="./designs/mechanical.jpg" class="graphic-img">
+                  </div>
+                  <div class="tbl-col-gfx-2">
+                    <img src="./designs/mitipurr.jpg" class="graphic-img">
+                  </div>
+                  <div class="tbl-col-gfx-2">
+                    <img src="./designs/tent.jpg" class="graphic-img">
+                  </div>
+                  <div class="tbl-col-gfx-2">
+                    <img src="./designs/starwarspub.jpg" class="graphic-img">
+                  </div>
+                </div>
+
+                <div class="tbl-row-intro">
+
+                  <div class="tbl-col-gfx-40">
+                    <img src="./designs/banner.png" class="graphic-img">
+                  </div>
+
+                  <div class="tbl-col-gfx-40">
+                    <img src="./designs/nothing.png" class="graphic-img">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+              <button id="button">SHOW MORE</button>
+            </div>
+
+            <div id="wrapper" class="open">
+              <div id="list">
+
+                <div class="tbl-row-intro">
+                  <div class="tbl-col-gfx-2">
+                    <img src="./designs/amnesiac.jpg" class="graphic-img">
+                  </div>
+                  <div class="tbl-col-gfx-2">
+                    <img src="./designs/mechanical.jpg" class="graphic-img">
+                  </div>
+                  <div class="tbl-col-gfx-2">
+                    <img src="./designs/mitipurr.jpg" class="graphic-img">
+                  </div>
+                  <div class="tbl-col-gfx-2">
+                    <img src="./designs/tent.jpg" class="graphic-img">
+                  </div>
+                  <div class="tbl-col-gfx-2">
+                    <img src="./designs/starwarspub.jpg" class="graphic-img">
+                  </div>
+                </div>
+
+                <div class="tbl-row-intro">
+
+                  <div class="tbl-col-gfx-40">
+                    <img src="./designs/banner.png" class="graphic-img">
+                  </div>
+
+                  <div class="tbl-col-gfx-40">
+                    <img src="./designs/nothing.png" class="graphic-img">
+                  </div>
+
+                </div>
+              </div>
+            </div> -->
+
+            <div id="button-div-close">
+              <button id="button">COLLAPSE</button>
+            </div>
+
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+```
+
+```html
 Applux represents a unity of professionals with a diverse range of complementary and intersecting skillsets, with the goal of bringing businesses solutions with the use of modern tech. With the members collaborating with each other to reach results, Applux's philosophy is built on the notion that the whole is greater than the individual parts.
 <br><br>
 Services include but are not limited to web development, mobile and tablet application development, systems analysis, project management and financial analysis.

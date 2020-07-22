@@ -1236,14 +1236,14 @@ MOBILE
 
 /* ABOUT */
 
-span.abt-video,span#about-span {
+span.abt-img,span#about-span {
 	position: relative;
 	height: 48rem;
 	overflow: hidden;
 }
 
 @media (min-width: 63.9em) {
-	span.abt-video,span#about-span{
+	span.abt-img,span#about-span{
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -1254,7 +1254,7 @@ span.abt-video,span#about-span {
 	}
 }
 
-span.abt-video {
+span.abt-img {
 	position:relative;overflow:hidden
 }
 
@@ -1299,9 +1299,6 @@ span#about-span .abt-content>div {
 	padding: 3rem;
 }
 
-span#about-span .abt-content .illustration {
-	margin-bottom: 8rem;
-}
 
 span#about-span .abt-content img {
 	width: 100%;
@@ -1314,13 +1311,13 @@ span#about-span .abt-content img {
 	}
 }
 
-span#about-span .abt-video {
+span#about-span .abt-img {
 	position:relative;
 	overflow:hidden;min-height: 48rem;
 }
 
 @media (min-width: 63.9em) {
-	span#about-span .abt-video {
+	span#about-span .abt-img {
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -1330,7 +1327,7 @@ span#about-span .abt-video {
 }
 
 @media (max-width: 1022px) {
-	.abt-video {
+	.abt-img {
 		display: none;
 	}
 }
@@ -1386,6 +1383,12 @@ span#about-span .abt-video {
 @keyframes App-logo-spin {
 	0% {margin-top: 0vh;}
 	100% {margin-top: 2vh;}
+}
+
+#about li {
+	list-style-type: none;
+	color: #fff;
+	padding: 5px 0;
 }
 
 #web-stack li, #web-ext-showcase li {
