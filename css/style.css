@@ -42,7 +42,7 @@ a:active, a:visited, a:focus {
 }
 
 .demo-style {
-	padding: 0 10px;
+	padding: 2px 5px;
 	font-size: 1.5em;
 	background: rgba(200, 200, 200, .2);
 	color: #fff;
@@ -57,7 +57,7 @@ a:active, a:visited, a:focus {
 }
 
 .github-style {
-	padding: 0 10px;
+	padding: 2px 5px;
 	font-size: 1.5em;
 	background: rgba(200, 200, 0, .6);
 	color: #fff;
@@ -406,7 +406,7 @@ NAVIGATION BAR
 #social-media #img-top {
 	display: none;
 	position: absolute;
-	top: 2px;
+	top: 0;
 	left: 0;
 	z-index: 99;
 }
@@ -476,7 +476,7 @@ NAVIGATION BAR
 		left: 0;
 		padding-left: 0;
     z-index: -4;
-		background: url(../img/mountain-silhouette.jpg);
+		background: url(../img/bg/mountain-silhouette.jpg);
 		background-size: 100%;
 }
 
@@ -537,7 +537,7 @@ BODY
 }
 
 .scroll_btn {
-	background: url(../img/scroll.gif) 50% 50% no-repeat rgba(50, 50, 50, 1);
+	background: url(../img/icons/scroll.gif) 50% 50% no-repeat rgba(50, 50, 50, 1);
 	border-radius: 50%;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
