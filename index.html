@@ -57,10 +57,12 @@
         <span class="line-height"></span>
 
         <span class="scrolldown">
-          <span class="scroll_btn border">
-            <a href="#first" id="scroll-down" class="scroll"><img src="./img/icons/scroll.gif"
-                style="visibility: hidden;"></a>
-          </span>
+          <a href="#first" id="scroll-down" class="scroll">
+            <span class="scroll_btn border">
+              <img src="./img/icons/scroll.gif"
+                  style="visibility: hidden;">
+            </span>
+          </a>
         </span>
 
       </div>
@@ -133,15 +135,28 @@
       <div class="tbl-row-intro">
 
         <div class="tbl-col-front-end-l tbl-col-metagenre-l">
-          <a id="main-img-enlarge" href="./images.html?location=index&image=metagenre_1.png">
-            <img id="main-img" src="./img/websites/metagenre_1.png">
-          </a>
-          <div style="padding: 0 10%">
-            <img src="./img/websites/metagenre_1.png" onclick="changeImage('metagenre_1.png');" style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
-            <img src="./img/websites/metagenre_2.png" onclick="changeImage('metagenre_2.png');"
-              style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
-            <img src="./img/websites/metagenre_3.png" onclick="changeImage('metagenre_3.png');"
-              style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
+        
+          <div id="zoom" class="magnify-wrapper row">
+            <div>
+              <a id=" main-img-enlarge" href="./images.html?location=index&image=metagenre_1.png">
+                <img class='img-div column'
+                  src="./img/websites/metagenre_1.png"
+                  id="main-img" />
+              </a>
+            </div>
+            <div class="column column-2" style="position: relative;">
+              <img id="large-img">
+            </div>
+            <div style="padding: 0 10%">
+              <img src="./img/websites/metagenre_1.png" onclick="changeImage('metagenre_1.png');" style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
+              <img src="./img/websites/metagenre_2.png" onclick="changeImage('metagenre_2.png');"
+                style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
+              <img src="./img/websites/metagenre_3.png" onclick="changeImage('metagenre_3.png');"
+                style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
+          </div>
+
+
+
           </div>
         </div>
         
@@ -324,14 +339,7 @@
     </div>
 
   </body>
-  <script>
-    function changeImage(value) {
-      console.log(value)
-      document.getElementById("main-img").src = `./img/websites/${value}`;
-      document.getElementById("main-img-enlarge").href = `./images.html?location=index&image=${value}`;
-
-    }
-  </script>
+  <script src="./js/image.js"></script>
   <script src="./js/scroll.js"></script>
   <script src="./js/typing.js"></script>
   <script src="./js/navbar-change.js"></script>
