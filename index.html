@@ -73,13 +73,15 @@
         <a class="scroll" href="#home">HOME</a>
       </span>&nbsp;
       <div class="projectsNavbar" id="projectsNavbar">
-         <a class="scroll" href="#about" id="about-nav">ABOUT</a>&nbsp;
-         <span class="navbar-point">•</span>
-         <a class="scroll" href="#metagenre" id="webdev-nav">SHOWCASE #1</a>&nbsp;
-         <span class="navbar-point">•</span> 
-         <a class="scroll" href="#webdev" id="webdev-nav">WEBSITES</a>&nbsp;
-         <span class="navbar-point">•</span> 
-         <a class="scroll" href="#graphic" id="gfx-nav">MISC</a>
+        <a class="scroll" style="display: none;" id="home-nav"></a>
+        <a class="scroll" href="#about" id="about-nav">ABOUT</a>&nbsp;
+        <span class="navbar-point">•</span>
+        <a class="scroll" href="#metagenre" id="meta-nav">SHOWCASE #1</a>&nbsp;
+        <span class="navbar-point">•</span> 
+        <a class="scroll" href="#webdev" id="web-nav">WEBSITES</a>&nbsp;
+        <span class="navbar-point">•</span> 
+        <a class="scroll" href="#graphic" id="misc-nav">MISC</a>
+        <a class="scroll" style="display: none;" id="end-nav"></a>
       </div>
     </div>
 
@@ -127,77 +129,77 @@
     <hr class='hr-styled'>
 
     <div class="encompass">
+      <div id="metagenre">
 
-      <div id="metagenre"></div>
+        <div class="add-twenty"></div>
 
-      <div class="add-twenty"></div>
+        <div class="tbl-row-intro">
 
-      <div class="tbl-row-intro">
-
-        <div class="tbl-col-front-end-l tbl-col-metagenre-l">
-        
-          <div id="zoom" class="magnify-wrapper row">
-            <div>
-              <a id=" main-img-enlarge" href="./images.html?location=index&image=metagenre_1.png">
-                <img class='img-div column'
-                  src="./img/websites/metagenre_1.png"
-                  id="main-img" />
-              </a>
+          <div class="tbl-col-front-end-l tbl-col-metagenre-l">
+          
+            <div id="zoom" class="magnify-wrapper row">
+              <div>
+                <a id=" main-img-enlarge" href="./images.html?location=index&image=metagenre_1.png">
+                  <img class='img-div column'
+                    src="./img/websites/metagenre_1.png"
+                    id="main-img" />
+                </a>
+              </div>
+              <div class="column column-2" style="position: relative;">
+                <img id="large-img">
+              </div>
+              <div style="padding: 0 10%">
+                <img src="./img/websites/metagenre_1.png" onclick="changeImage('metagenre_1.png');" style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
+                <img src="./img/websites/metagenre_2.png" onclick="changeImage('metagenre_2.png');"
+                  style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
+                <img src="./img/websites/metagenre_3.png" onclick="changeImage('metagenre_3.png');"
+                  style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
             </div>
-            <div class="column column-2" style="position: relative;">
-              <img id="large-img">
+
+
+
             </div>
-            <div style="padding: 0 10%">
-              <img src="./img/websites/metagenre_1.png" onclick="changeImage('metagenre_1.png');" style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
-              <img src="./img/websites/metagenre_2.png" onclick="changeImage('metagenre_2.png');"
-                style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
-              <img src="./img/websites/metagenre_3.png" onclick="changeImage('metagenre_3.png');"
-                style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
           </div>
+          
+          <div class="tbl-col-front-end-r tbl-col-metagenre-r">
 
+            <p style="font-size: .5em; color: #fff">
+              SHOWCASE #1:
+            </p>
 
+            <p class="p-title"><i style="background: rgb(218, 105, 0); padding: 5px 10px;" class="fas fa-thumbtack"></i> Metagenre</p>
+            <hr class='hr-styled' style="margin: 10px">
+            <ul id="web-bullet-points">
+              <li>Site for choosing genres and subgenres for games, books, and other entertainment mediums.</li>
+              <li>Medium genres are compared to each other. Most similar mediums are reocommended to users on individual medium page.</li>
+              <li>Users can also vote on which genre umbrella a subgenre belongs to.</li>
+            </ul>
+            <br>
+            <p><b>Stack:</b> 
+              <ul id="web-stack">
+                <li class="stack-frontend">React</li>
+                <li class="stack-backend">Express/Node</li>
+                <li class="stack-db">MySQL</li>
+                <li class="stack-css">Sass</li>
+                <li class="stack-deployment">AWS</li>
+                <li class="stack-deployment">Nginx</li>
+
+              </ul>
+            </p>
+
+            <br>
+
+            <p>
+              <b>External links:</b>
+
+              <ul id="web-ext-showcase">
+                <li><a class="github-style" href="https://github.com/epourgh/metagenre">github <i style="font-size: .8em" class="fas fa-external-link-alt"></i></a></li>
+                <li><a class="demo-style" href="http://18.225.9.206/">demo <i style="font-size: .8em" class="fas fa-external-link-alt"></i></a></li>
+              </ul>
+
+            </p>
 
           </div>
-        </div>
-        
-        <div class="tbl-col-front-end-r tbl-col-metagenre-r">
-
-          <p style="font-size: .5em; color: #fff">
-            SHOWCASE #1:
-          </p>
-
-          <p class="p-title"><i style="background: rgb(218, 105, 0); padding: 5px 10px;" class="fas fa-thumbtack"></i> Metagenre</p>
-          <hr class='hr-styled' style="margin: 10px">
-          <ul id="web-bullet-points">
-            <li>Site for choosing genres and subgenres for games, books, and other entertainment mediums.</li>
-            <li>Medium genres are compared to each other. Most similar mediums are reocommended to users on individual medium page.</li>
-            <li>Users can also vote on which genre umbrella a subgenre belongs to.</li>
-          </ul>
-          <br>
-          <p><b>Stack:</b> 
-            <ul id="web-stack">
-              <li class="stack-frontend">React</li>
-              <li class="stack-backend">Express/Node</li>
-              <li class="stack-db">MySQL</li>
-              <li class="stack-css">Sass</li>
-              <li class="stack-deployment">AWS</li>
-              <li class="stack-deployment">Nginx</li>
-
-            </ul>
-          </p>
-
-          <br>
-
-          <p>
-            <b>External links:</b>
-
-            <ul id="web-ext-showcase">
-              <li><a class="github-style" href="https://github.com/epourgh/metagenre">github <i style="font-size: .8em" class="fas fa-external-link-alt"></i></a></li>
-              <li><a class="demo-style" href="http://18.225.9.206/">demo <i style="font-size: .8em" class="fas fa-external-link-alt"></i></a></li>
-            </ul>
-
-          </p>
-
         </div>
       </div>
     </div>
@@ -208,7 +210,6 @@
     <!-- WEB DEVELOPMENT SECTION -->
 
     <!-- Navbar smooth scrolling -->
-    <div id="webdev" ></div>
 
     <div id="webdev">
       <div id="encompass-webdev">
@@ -329,9 +330,14 @@
     <a class="twitter-grid" data-partner="tweetdeck" href="https://twitter.com/ampourgh/timelines/1050208014110732288?ref_src=twsrc%5Etfw">Timeline</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 
 
-    <br>
+    <hr class='hr-styled'>
 
     <!-- Go back up from bottom of page -->
+    <div id="end"></div>
+    <div class="add-twenty"></div>
+    <div style="text-align: center">
+      <p style="font-size: smaller;">2020 Emerson Pourghaed</p>
+    </div>
     <div class="chevron">
       <a href="#home" class="goUp">
         <i class="fas fa-chevron-up text home"></i>

@@ -1,12 +1,12 @@
 const home = document.querySelector('#home').getBoundingClientRect().y + window.scrollY;
 const about = document.querySelector('#about').getBoundingClientRect().y + window.scrollY;
-const meta = document.querySelector('#metagenre').getBoundingClientRect().y + window.scrollY;
+const meta = document.querySelector('#metagenre').getBoundingClientRect().y + window.scrollY + 50;
 const web = document.querySelector('#webdev').getBoundingClientRect().y + window.scrollY;
 const misc = document.querySelector('#gfx').getBoundingClientRect().y + window.scrollY;
+const end = document.querySelector('#end').getBoundingClientRect().y + window.scrollY;
 
 let topPos;
 const sectionSnip = (about - home) / 3;
-
 
 console.log(`1/3: ${sectionSnip}`)
 console.log(`home: ${home}`)
@@ -20,6 +20,7 @@ console.log(`misc: ${misc}`)
 
 // Setup isScrolling variable
 var isScrolling;
+let previousString;
 
 // Listen for scroll events
 window.addEventListener('scroll', function (event) {
@@ -35,10 +36,32 @@ window.addEventListener('scroll', function (event) {
 
         let scrollY = this.scrollY;
 
-        topPos = (scrollY > home - sectionSnip && scrollY < about - sectionSnip)?home:
-                 (scrollY > about - sectionSnip && scrollY < meta - sectionSnip)?about:
-                 (scrollY > meta - sectionSnip && scrollY < web - sectionSnip)?meta:
-                 (scrollY > web - sectionSnip && scrollY < misc - sectionSnip)?web:misc;
+        keyString = (scrollY > home - sectionSnip && scrollY < about - sectionSnip)?'home':
+                    (scrollY > about - sectionSnip && scrollY < meta - sectionSnip)?'about':
+                    (scrollY > meta - sectionSnip && scrollY < web - sectionSnip)?'meta':
+                    (scrollY > web - sectionSnip && scrollY < misc - sectionSnip)?'web':
+                    (scrollY > misc - sectionSnip && scrollY < misc + sectionSnip)?'misc':'end';
+
+        const keyValues = {
+            home: home,
+            about: about,
+            meta: meta,
+            web: web,
+            misc: misc,
+            end: end
+        };
+
+        console.log(keyString)
+
+        if (previousString !== undefined) {
+            document.getElementById(`${previousString}-nav`).classList = 'scroll'; 
+        }
+
+        document.getElementById(`${keyString}-nav`).classList = 'scroll active';
+
+
+        previousString = keyString;
+        topPos = keyValues[keyString];
 
         window.scroll({
             top: topPos,

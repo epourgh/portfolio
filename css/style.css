@@ -361,6 +361,15 @@ NAVIGATION BAR
 	border-image-slice: 1;
 }
 
+.scrolled.navbar .active {
+	color: #BBD200;
+	padding-bottom: 8px;
+	border-bottom: 8px solid transparent;
+	border-image: linear-gradient(to right, #00E512, #008DBF);
+	border-image-slice: 1;
+}
+
+
 .home-button a:hover {
 	visibility: hidden;
 }
