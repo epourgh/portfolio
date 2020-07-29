@@ -20,9 +20,15 @@ console.log(`misc: ${misc}`)
 
 // Setup isScrolling variable
 var isScrolling;
+let previousString;
 const windowHash = window.location.hash.replace('#', '');
-document.getElementById(`${windowHash}-nav`).classList = 'scroll active';
-let previousString = windowHash;
+if (windowHash !== '') {
+    document.getElementById(`${windowHash}-nav`).classList = 'scroll active';
+    previousString = windowHash;
+} else {
+    document.getElementById(`home-nav`).classList = 'scroll active';
+    previousString = 'home';
+}
 
 
 

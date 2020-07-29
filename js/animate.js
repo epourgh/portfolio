@@ -4,7 +4,7 @@ var d = document.getElementById('encompass-webdev');
 var e = document.getElementById('encompass-misc');
 
 var a = document.getElementById('about-nav');
-var b = document.getElementById('web-nav');
+var b = document.getElementById('webdev-nav');
 var g = document.getElementById('misc-nav');
 
 var count = true;
