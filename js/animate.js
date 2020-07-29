@@ -1,7 +1,7 @@
 var c = document.getElementById('encompass');
 var as = document.getElementById('about-span');
 var d = document.getElementById('encompass-webdev');
-var e = document.getElementById('encompass-gfx');
+var e = document.getElementById('encompass-misc');
 
 var a = document.getElementById('about-nav');
 var b = document.getElementById('web-nav');

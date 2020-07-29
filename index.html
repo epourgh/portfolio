@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Karla&Fredoka+One" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
 
   </head>
 
@@ -17,18 +18,45 @@
     <!-- For smooth scrolling to the top of the page -->
     <div id="home"></div>
 
-  	<span class="nav-icon menu text-nav" id="navbar-mobile">
+    <!-- <nav id="mobile-nav"></nav> -->
+    <div id="left-nav">
       <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#metagenre">SHOWCASE#1</a></li>
-        <li><a href="#webdev">WEBSITES</a></li>
-        <li><a href="#graphic">MISC</a></li>
+        <h3>Portfolio</h3>
+        <hr>
+        <li>
+          <a class="scroll" href="#home" id="home-nav">Home</a>
+        </li>
+        <li>
+          <a class="scroll" href="#about" id="about-nav">About</a>
+        </li>
+        <li>
+          <a class="scroll" href="#metagenre" id="metagenre-nav">Showcase I</a>
+          <ol class="adjust-ol">
+            <li><a href="#metagenre">Metagenre</a></li>
+          </ol>
+        </li>
+        <li>
+          <a class="scroll" href="#webdev" id="webdev-nav">Websites</a>
+          <ol class="adjust-ol">
+            <li><a href="./web.html?key=5">Town Maps</a></li>
+            <li><a href="./web.html?key=0">USA Seat Covers</a></li>
+            <li><a href="./web.html?key=1">Catalog</a></li>
+            <li><a href="./web.html?key=2">Restaurant</a></li>
+            <li><a href="./web.html?key=3">A to Z One Day</a></li>
+            <li><a href="./web.html?key=4">Calendar</a></li>
+          </ol>
+        </li>
+        <li>
+          <a class="scroll" href="#misc" id="misc-nav">Misc</a>
+          <ol class="adjust-ol">
+            <li><a href="https://codepen.io/ampourgh/pen/QWwEwOo">Single Page Shop</a></li>
+            <li><a href="https://codepen.io/ampourgh/pen/pooBvEv">Switch Animation</a></li>
+            <li><a href="https://codepen.io/ampourgh/pen/BaNzvxB">Percentage</a></li>
+            <li><a href="https://codepen.io/ampourgh/pen/MWYKPqQ">Draggable Interface</a></li>
+          </ol>
+        </li>
       </ul>
-    </span>
-
-    <nav id="mobile-nav"></nav>
-
+    </div>
     <span class="wallpaper-front"></span>
     <span class="wallpaper"></span>
 
@@ -68,23 +96,6 @@
       </div>
     </header>
 
-    <div class="navbar" id="navbar">
-      <span class="home-button">
-        <a class="scroll" href="#home">HOME</a>
-      </span>&nbsp;
-      <div class="projectsNavbar" id="projectsNavbar">
-        <a class="scroll" style="display: none;" id="home-nav"></a>
-        <a class="scroll" href="#about" id="about-nav">ABOUT</a>&nbsp;
-        <span class="navbar-point">•</span>
-        <a class="scroll" href="#metagenre" id="meta-nav">SHOWCASE #1</a>&nbsp;
-        <span class="navbar-point">•</span> 
-        <a class="scroll" href="#webdev" id="web-nav">WEBSITES</a>&nbsp;
-        <span class="navbar-point">•</span> 
-        <a class="scroll" href="#graphic" id="misc-nav">MISC</a>
-        <a class="scroll" style="display: none;" id="end-nav"></a>
-      </div>
-    </div>
-
     <hr class='hr-styled'>
 
     <div id="first" ></div>
@@ -103,7 +114,7 @@
             <ul>
               <li>Hi! I'm a Web developer who started out designing CSS templates for message boards and static pages
                 over a decade ago, which translated to my first job as an <span
-                  style="font-size:1em; background: rgb(73, 92, 73)">SEO</span>/web admin for a graphic
+                  style="font-size:1em; background: rgb(73, 92, 73)">SEO</span>/web admin for a misc
                 manufacturer. I
                 had briefly programmed with <span style="font-size:1em; background: rgb(73, 92, 73)">Python</span> for descriptive
                   statistics in graduate school, eventually directing my interest into learning <span
@@ -128,8 +139,8 @@
 
     <hr class='hr-styled'>
 
-    <div class="encompass">
-      <div id="metagenre">
+    <div id="metagenre">
+      <div class="encompass">
 
         <div class="add-twenty"></div>
 
@@ -149,11 +160,12 @@
                 <img id="large-img">
               </div>
               <div style="padding: 0 10%">
-                <img src="./img/websites/metagenre_1.png" onclick="changeImage('metagenre_1.png');" style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
+                <img src="./img/websites/metagenre_1.png" onclick="changeImage('metagenre_1.png');"
+                  style="height: 50px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
                 <img src="./img/websites/metagenre_2.png" onclick="changeImage('metagenre_2.png');"
-                  style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
+                  style="height: 50px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
                 <img src="./img/websites/metagenre_3.png" onclick="changeImage('metagenre_3.png');"
-                  style="height: 100px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
+                  style="height: 50px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
             </div>
 
 
@@ -277,10 +289,8 @@
     <!-- GRAPHIC DESIGN SECTION -->
 
     <!-- Navbar smooth scrolling -->
-    <div id="graphic" ></div>
-
-    <div id="gfx">
-      <div id="encompass-gfx" class="encompass-graphic">
+    <div id="misc">
+      <div id="encompass-misc" class="encompass-misc">
         <h2 style="font-weight: bold; text-align: center;">MISC:</h2>
         <h3 style="margin-top: 0px; text-align: center;">Miscellaneous work on CodePen</h3>
 
@@ -345,10 +355,16 @@
     </div>
 
   </body>
+  <div id=”content-lg-res”>
+    
+  </div>
+  <script>
+  if (screen && screen.width >= 1000) {
+        document.write('<script src="./js/magnet.js"><\/script>');
+  }
+  </script> 
   <script src="./js/image.js"></script>
-  <script src="./js/magnet.js"></script>
   <script src="./js/scroll.js"></script>
   <script src="./js/typing.js"></script>
-  <script src="./js/navbar-change.js"></script>
   <script src="./js/animate.js"></script>
 </html>

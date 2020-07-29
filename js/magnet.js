@@ -1,9 +1,9 @@
 const home = document.querySelector('#home').getBoundingClientRect().y + window.scrollY;
 const about = document.querySelector('#about').getBoundingClientRect().y + window.scrollY;
-const meta = document.querySelector('#metagenre').getBoundingClientRect().y + window.scrollY + 50;
-const web = document.querySelector('#webdev').getBoundingClientRect().y + window.scrollY;
-const misc = document.querySelector('#gfx').getBoundingClientRect().y + window.scrollY;
-const end = document.querySelector('#end').getBoundingClientRect().y + window.scrollY;
+const metagenre = document.querySelector('#metagenre').getBoundingClientRect().y + window.scrollY;
+const webdev = document.querySelector('#webdev').getBoundingClientRect().y + window.scrollY -50;
+const misc = document.querySelector('#misc').getBoundingClientRect().y + window.scrollY -50;
+const end = document.querySelector('#end').getBoundingClientRect().y + window.scrollY -50;
 
 let topPos;
 const sectionSnip = (about - home) / 3;
@@ -11,8 +11,8 @@ const sectionSnip = (about - home) / 3;
 console.log(`1/3: ${sectionSnip}`)
 console.log(`home: ${home}`)
 console.log(`about: ${about}`)
-console.log(`meta: ${meta}`)
-console.log(`web: ${web}`)
+console.log(`metagenre: ${metagenre}`)
+console.log(`webdev: ${webdev}`)
 console.log(`misc: ${misc}`)
 
 // setTimeout(div_show, 1000)
@@ -20,7 +20,11 @@ console.log(`misc: ${misc}`)
 
 // Setup isScrolling variable
 var isScrolling;
-let previousString;
+const windowHash = window.location.hash.replace('#', '');
+document.getElementById(`${windowHash}-nav`).classList = 'scroll active';
+let previousString = windowHash;
+
+
 
 // Listen for scroll events
 window.addEventListener('scroll', function (event) {
@@ -37,16 +41,16 @@ window.addEventListener('scroll', function (event) {
         let scrollY = this.scrollY;
 
         keyString = (scrollY > home - sectionSnip && scrollY < about - sectionSnip)?'home':
-                    (scrollY > about - sectionSnip && scrollY < meta - sectionSnip)?'about':
-                    (scrollY > meta - sectionSnip && scrollY < web - sectionSnip)?'meta':
-                    (scrollY > web - sectionSnip && scrollY < misc - sectionSnip)?'web':
+                    (scrollY > about - sectionSnip && scrollY < metagenre - sectionSnip)?'about':
+                    (scrollY > metagenre - sectionSnip && scrollY < webdev - sectionSnip)?'metagenre':
+                    (scrollY > webdev - sectionSnip && scrollY < misc - sectionSnip)?'webdev':
                     (scrollY > misc - sectionSnip && scrollY < misc + sectionSnip)?'misc':'end';
 
         const keyValues = {
             home: home,
             about: about,
-            meta: meta,
-            web: web,
+            metagenre: metagenre,
+            webdev: webdev,
             misc: misc,
             end: end
         };

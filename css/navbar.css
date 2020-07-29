@@ -1,0 +1,96 @@
+@media screen and (max-width: 5000px) and (min-width: 1001px) {
+    #left-nav {
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #fff;
+        z-index: 999;
+    }
+
+    
+    #left-nav ul {
+        margin: 10px;
+    }    
+    
+    #left-nav ul h3 {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        padding: 0;
+        color: black;
+    }
+
+    #left-nav ul p {
+        font-size: .5em;
+        color: #ccc;
+    }
+
+    #left-nav ul hr {
+        border: 0;
+        margin: 10px 0;
+        border-top: 1px solid #eee
+    }
+
+    #left-nav ul li a {
+        font-size: 1em;
+        transition: 0s ease-in;
+        color: rgb(100, 100, 100);
+    }
+
+    #left-nav ul li {
+        padding: 5px 0;
+        list-style-type: none;
+    }
+
+    #left-nav ul li a:hover {
+        color: rgb(0, 0, 0);
+    } 
+
+    #left-nav ul li .active {
+        font-size: 1.5em;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        content: "]";
+    }
+
+    #left-nav ul li ol li {
+        padding: 5px 0;
+        margin: 0 30px;
+        list-style-type: lower-roman;
+    }
+
+    body {
+        margin-left: 250px;
+    }
+}
+
+
+
+@media screen and (max-width: 999px) {
+    #left-nav ul h3, #left-nav ul hr, .adjust-ol {
+        display: none;
+    }
+
+    #left-nav {
+        display: block;
+        background: #fff;
+        padding: 0;
+        border: none;
+        position: fixed;
+        bottom: 2%;
+        left: 2%;
+        z-index: 5;
+        padding: 5px;
+        vertical-align: text-top;
+    }
+    #left-nav ul li {
+        list-style-type: none;
+    }
+
+    #left-nav ul li a {
+        font-size: 20px;
+    }
+
+}
