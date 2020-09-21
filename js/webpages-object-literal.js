@@ -130,8 +130,8 @@ const webObjectLiteral = [{
     {
         title: 'Houston Map Filter',
         image: 'google-maps.png',
-        demo: 'https://epourgh.github.io/Neighborhood-Map/',
-        github: 'https://github.com/epourgh/Neighborhood-Map',
+        demo: 'https://epourgh.github.io/Neighborhood-Map/v1/',
+        github: 'https://github.com/epourgh/Neighborhood-Map/v1',
         stack: [
             'JavaScript',
             'KnockOut.js',
