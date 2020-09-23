@@ -1,10 +1,10 @@
-function changeImage(value) {
+function changeImage(value, num) {
     console.log(value)
-    document.getElementById("main-img").src = `./img/websites/${value}`;
+    document.getElementById(`main-img-${num}`).src = `./img/websites/${value}`;
 
-    document.getElementById("large-img").style.background = `url("./img/websites/${value}") no-repeat rgba(32,
+    document.getElementById(`large-img-${num}`).style.background = `url("./img/websites/${value}") no-repeat rgba(32,
     31, 36, 1)`;
-    document.getElementById("main-img-enlarge").href = `./images.html?location=index&image=${value}`;
+    document.getElementById(`main-img-enlarge-${num}`).href = `./images.html?location=index&image=${value}`;
 
 }
 
@@ -40,11 +40,11 @@ zoomFunction = (zoom, positionX, positionY, mainImg, largeImg, offsetLeft, offse
     style.top = y - 50 + "px";
 }
 
-document.getElementById("zoom").addEventListener(
+document.getElementById("zoom-1").addEventListener(
     "mousemove",
     function (e) {
         // let [mainImg, largeImg] = ["main-img", "large-img"];
-        zoomFunction("zoom", e.pageX, e.pageY, "main-img", "large-img", this.offsetLeft, this.offsetTop)
+        zoomFunction("zoom-1", e.pageX, e.pageY, "main-img-1", "large-img-1", this.offsetLeft, this.offsetTop)
     },
     false
 );
@@ -54,6 +54,15 @@ document.getElementById("zoom-2").addEventListener(
     function (e) {
         // let [mainImg, largeImg] = ["main-img", "large-img"];
         zoomFunction("zoom-2", e.pageX, e.pageY, "main-img-2", "large-img-2", this.offsetLeft, this.offsetTop)
+    },
+    false
+);
+
+document.getElementById("zoom-3").addEventListener(
+    "mousemove",
+    function (e) {
+        // let [mainImg, largeImg] = ["main-img", "large-img"];
+        zoomFunction("zoom-3", e.pageX, e.pageY, "main-img-3", "large-img-3", this.offsetLeft, this.offsetTop)
     },
     false
 );

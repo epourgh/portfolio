@@ -42,6 +42,12 @@
           </ol>
         </li>
         <li>
+          <a class="scroll" href="#maps" id="maps-nav">Showcase III</a>
+          <ol class="adjust-ol">
+            <li><a href="#maps">Maps</a></li>
+          </ol>
+        </li>
+        <li>
           <a class="scroll" href="#webdev" id="webdev-nav">Websites</a>
           <ol class="adjust-ol">
             <li><a href="./web.html?key=5">Town Maps</a></li>
@@ -157,23 +163,23 @@
 
           <div class="tbl-col-front-end-l tbl-col-metagenre-l">
           
-            <div id="zoom" class="magnify-wrapper row">
+            <div id="zoom-1" class="magnify-wrapper row">
               <div>
-                <a id="main-img-enlarge" href="./images.html?location=index&image=metagenre_1.png">
+                <a id="main-img-enlarge-1" href="./images.html?location=index&image=metagenre_1.png">
                   <img class='img-div column'
                     src="./img/websites/metagenre_1.png"
-                    id="main-img" />
+                    id="main-img-1" />
                 </a>
               </div>
               <div class="column column-2" style="position: relative;">
-                <img id="large-img">
+                <img id="large-img-1">
               </div>
               <div style="padding: 0 10%">
-                <img src="./img/websites/metagenre_1.png" onclick="changeImage('metagenre_1.png');"
+                <img src="./img/websites/metagenre_1.png" onclick="changeImage('metagenre_1.png', 1);"
                   style="height: 50px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
-                <img src="./img/websites/metagenre_2.png" onclick="changeImage('metagenre_2.png');"
+                <img src="./img/websites/metagenre_2.png" onclick="changeImage('metagenre_2.png', 1);"
                   style="height: 50px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
-                <img src="./img/websites/metagenre_3.png" onclick="changeImage('metagenre_3.png');"
+                <img src="./img/websites/metagenre_3.png" onclick="changeImage('metagenre_3.png', 1);"
                   style="height: 50px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
             </div>
 
@@ -199,6 +205,7 @@
             <p><b>Stack:</b> 
               <ul id="web-stack">
                 <li class="stack-frontend">React</li>
+                <li class="stack-frontend">Hooks</li>
                 <li class="stack-backend">Express/Node</li>
                 <li class="stack-db">MySQL</li>
                 <li class="stack-css">Sass</li>
@@ -225,6 +232,8 @@
       </div>
     </div>
 
+    <hr class='hr-styled'>
+
     <div id="newsfeed">
       <div class="encompass">
     
@@ -236,7 +245,7 @@
     
             <div id="zoom-2" class="magnify-wrapper row">
               <div>
-                <a id="main-img-enlarge" href="./images.html?location=index&image=newsfeed_1.png">
+                <a id="main-img-enlarge-2" href="./images.html?location=index&image=newsfeed_1.png">
                   <img class='img-div column' src="./img/websites/newsfeed_1.png" id="main-img-2" />
                 </a>
               </div>
@@ -282,6 +291,99 @@
               <li><a class="github-style" href="https://github.com/epourgh/news-feed">github <i style="font-size: .8em"
                     class="fas fa-external-link-alt"></i></a></li>
               <li><a class="demo-style" href="https://epourgh.github.io/news-feed/">demo <i style="font-size: .8em"
+                    class="fas fa-external-link-alt"></i></a></li>
+            </ul>
+    
+            </p>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <hr class='hr-styled'>
+    
+    <div id="maps">
+      <div class="encompass">
+    
+        <div class="add-twenty"></div>
+    
+        <div class="tbl-row-intro">
+    
+          <div class="tbl-col-front-end-l tbl-col-metagenre-l">
+    
+            <div id="zoom-3" class="magnify-wrapper row">
+              <div>
+                <a id="main-img-enlarge-3" href="./images.html?location=index&image=maps_1.png">
+                  <img class='img-div column' src="./img/websites/maps_1.png" id="main-img-3" />
+                </a>
+              </div>
+              <div class="column column-2" style="position: relative;">
+                <img id="large-img-3">
+              </div>
+              <div style="padding: 0 10%">
+                <img src="./img/websites/maps_1.png" onclick="changeImage('maps_1.png', 3);"
+                  style="height: 50px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
+                <img src="./img/websites/maps_2.png" onclick="changeImage('maps_2.png', 3);"
+                  style="height: 50px; width: auto; padding: 5px 5px 0 0;cursor: pointer;">
+              </div>    
+            </div>
+          </div>
+    
+          <div class="tbl-col-front-end-r tbl-col-metagenre-r">
+    
+            <p style="font-size: .5em; color: #fff">
+              SHOWCASE #3:
+            </p>
+    
+            <p class="p-title"><i style="background: rgb(218, 105, 0); padding: 5px 10px;" class="fas fa-thumbtack"></i>
+              Maps</p>
+            <hr class='hr-styled' style="margin: 10px">
+            <ul id="web-bullet-points">
+              <li>Using Google Maps, placed map markers around the city of Houston of specific locations recommended for
+              locals and tourists to visit.</li>
+              <li>Left of map is a filter functionality of the locations, and each marker displays Wikipedia information when
+              clicked.</li>
+            </ul>
+            <br>
+            <p><b>version 3 Stack:</b>
+            <ul id="web-stack">
+              <li class="stack-frontend">React</li>
+              <li class="stack-backend">Express/Node</li>
+              <li class="stack-db">MongoDB</li>
+              <li class="stack-api">Google Maps API</li>
+              <li class="stack-api">Wikipedia API</li>
+              <li class="stack-css">Sass</li>
+            </ul>
+            <div class="smaller">
+              <p><b>version 2 Stack:</b>
+              <ul id="web-stack">
+                <li class="stack-frontend">Vanilla JavaScript</li>
+                <li class="stack-frontend">JSON</li>
+                <li class="stack-css">CSS3</li>
+              </ul>
+              <p><b>version 1 Stack:</b>
+              <ul id="web-stack">
+                <li class="stack-frontend">Knockout.js Framework</li>
+                <li class="stack-frontend">JQuery</li>
+                <li class="stack-frontend">AJAX</li>
+              </ul>
+            </div>
+            </p>
+    
+            <br>
+    
+            <p>
+              <b>External links:</b>
+    
+            <ul id="web-ext-showcase">
+              <li><a class="github-style" href="https://github.com/epourgh/Neighborhood-Map/tree/master/v3">ver. 3 github <i style="font-size: .8em"
+                    class="fas fa-external-link-alt"></i></a></li>
+              <li><a class="github-style" href="https://github.com/epourgh/Neighborhood-Map/tree/master/v2">ver. 2 github <i style="font-size: .8em"
+                    class="fas fa-external-link-alt"></i></a></li>
+              <li><a class="demo-style" href="https://epourgh.github.io/Neighborhood-Map/v2/">demo <i
+                    style="font-size: .8em"
                     class="fas fa-external-link-alt"></i></a></li>
             </ul>
     
