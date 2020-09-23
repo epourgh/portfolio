@@ -1,6 +1,7 @@
 const home = document.querySelector('#home').getBoundingClientRect().y + window.scrollY;
 const about = document.querySelector('#about').getBoundingClientRect().y + window.scrollY;
 const metagenre = document.querySelector('#metagenre').getBoundingClientRect().y + window.scrollY;
+const newsfeed = document.querySelector('#newsfeed').getBoundingClientRect().y + window.scrollY;
 const webdev = document.querySelector('#webdev').getBoundingClientRect().y + window.scrollY -50;
 const misc = document.querySelector('#misc').getBoundingClientRect().y + window.scrollY -50;
 const end = document.querySelector('#end').getBoundingClientRect().y + window.scrollY -50;
@@ -12,6 +13,7 @@ console.log(`1/3: ${sectionSnip}`)
 console.log(`home: ${home}`)
 console.log(`about: ${about}`)
 console.log(`metagenre: ${metagenre}`)
+console.log(`newsfeed: ${newsfeed}`)
 console.log(`webdev: ${webdev}`)
 console.log(`misc: ${misc}`)
 
@@ -48,7 +50,8 @@ window.addEventListener('scroll', function (event) {
 
         keyString = (scrollY > home - sectionSnip && scrollY < about - sectionSnip)?'home':
                     (scrollY > about - sectionSnip && scrollY < metagenre - sectionSnip)?'about':
-                    (scrollY > metagenre - sectionSnip && scrollY < webdev - sectionSnip)?'metagenre':
+                    (scrollY > metagenre - sectionSnip && scrollY < newsfeed - sectionSnip)?'metagenre':
+                    (scrollY > newsfeed - sectionSnip && scrollY < webdev - sectionSnip) ? 'newsfeed' :
                     (scrollY > webdev - sectionSnip && scrollY < misc - sectionSnip)?'webdev':
                     (scrollY > misc - sectionSnip && scrollY < misc + sectionSnip)?'misc':'end';
 
@@ -56,6 +59,7 @@ window.addEventListener('scroll', function (event) {
             home: home,
             about: about,
             metagenre: metagenre,
+            newsfeed: newsfeed,
             webdev: webdev,
             misc: misc,
             end: end
