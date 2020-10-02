@@ -964,6 +964,11 @@ MOBILE
 	margin: 0% 0%;
 }
 
+.item-web {
+	flex: 0 0 30%;
+	margin: 0% 1%;
+}
+
 .item-0, .item-1, .item-2, .item-3, .item-4 {
 	position: relative;
 	width: 50%;

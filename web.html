@@ -54,10 +54,10 @@
         var url = new URL(url_string);
         var c = url.searchParams.get("key");
 
-        document.getElementById("web-img").src = `./img/websites/${webObjectLiteral[c].image}`;
-        document.getElementById("web-img-link").href = `./images.html?location=web&image=${webObjectLiteral[c].image}&index=${c}`;
-        document.getElementById("web-github").href = webObjectLiteral[c].github;
-        document.getElementById("web-demo").href = webObjectLiteral[c].demo;
+        document.getElementById("web-img").src = `./img/websites/${webObjectLiteral[c].images[0]}`;
+        document.getElementById("web-img-link").href = `./images.html?location=web&image=${webObjectLiteral[c].images[0]}&index=${c}`;
+        document.getElementById("web-github").href = webObjectLiteral[c].links[0].github;
+        document.getElementById("web-demo").href = webObjectLiteral[c].links[0].demo;
 
         subNum = c-1;
         addNum = parseInt(c)+1;
@@ -78,7 +78,7 @@
 
         var ul = document.getElementById("web-bullet-points");
 
-        for (var i = 0; i < webObjectLiteral[c].content.length; i++) { var singleLi=webObjectLiteral[c].content[i]; var
+        for (var i = 0; i < webObjectLiteral[c].content[0].description.length; i++) { var singleLi=webObjectLiteral[c].content[0].description[i]; var
             li=document.createElement('li');
             li.appendChild(document.createTextNode(singleLi)); ul.appendChild(li); 
         }
@@ -87,10 +87,10 @@
 
         for (var i = 0; i < webObjectLiteral[c].stack.length; i++) { 
 
-            var singleLi=webObjectLiteral[c].stack[i]; 
+            var singleLi=webObjectLiteral[c].stack[i].name; 
             var li=document.createElement('li');
 
-            li.classList.add(webObjectLiteral[c].stackColor[i])
+            li.classList.add(webObjectLiteral[c].stack[i].color)
 
             li.appendChild(document.createTextNode(singleLi)); 
             ul.appendChild(li); 
