@@ -17,11 +17,7 @@
     <div class="add-twenty"></div>
 
     <div class="tbl-row-intro">
-        <div class="tbl-col-front-end-l">
-            <a id="web-img-link">
-                <img id='web-img' class="front-end-img-1">
-            </a>
-        </div>
+        <div class="tbl-col-front-end-l" id="img-section"></div>
         <div class="tbl-col-front-end-r">
 
             <p style="font-size: .5em; color: #fff">
@@ -35,14 +31,13 @@
             <ul id='web-bullet-points'></ul>
 
             <br>
-            <p><b>Stack:</b> <ul id='web-stack'></ul></p>
+            <p><b>Stack:</b> 
+            <div id='web-stacks'></div></p>
+
+            <br>
             <p>
                 <b>External links:</b>
-                <ul id="web-ext-showcase">
-                    <li><a id='web-demo' class="github-style">github <i style="font-size: .8em" class="fas fa-external-link-alt"></i></a></li>
-                    <li><a id='web-github' class="demo-style">demo <i style="font-size: .8em"
-                                class="fas fa-external-link-alt"></i></a></li>
-                </ul>
+                <ul id="web-ext-showcase"></ul>
             </p>
         </div>
     </div>
@@ -54,10 +49,87 @@
         var url = new URL(url_string);
         var c = url.searchParams.get("key");
 
-        document.getElementById("web-img").src = `./img/websites/${webObjectLiteral[c].images[0]}`;
-        document.getElementById("web-img-link").href = `./images.html?location=web&image=${webObjectLiteral[c].images[0]}&index=${c}`;
-        document.getElementById("web-github").href = webObjectLiteral[c].links[0].github;
-        document.getElementById("web-demo").href = webObjectLiteral[c].links[0].demo;
+        // document.getElementById("web-img").src = `./img/websites/${webObjectLiteral[c].images[0]}`;
+        // document.getElementById("web-img-link").href = ``;
+        var imgSectionDiv = document.getElementById("img-section");
+        var div = document.createElement('div');
+
+        const regularCount = parseInt(c) + 1;
+
+        console.log(regularCount )
+        div.id = `zoom-${regularCount}`;
+        div.className = `magnify-wrapper row`;
+        var a = document.createElement('a');
+        a.id = `main-img-enlarge-${regularCount}`;
+        a.href = `./images.html?location=web&image=${webObjectLiteral[c].images[0]}.png&index=${c}`;
+
+        var img = document.createElement('img');
+
+        img.className = 'img-div column';
+        img.src = `./img/websites/${webObjectLiteral[c].images[0]}.png`;
+        img.id = `main-img-${regularCount}`
+        
+        a.appendChild(img);
+        div.appendChild(a);
+
+
+        var largeDiv = document.createElement('div');
+        largeDiv.className = `column column-2`;
+        largeDiv.style = 'position: relative;';
+
+        var largeImg = document.createElement('img');
+        largeImg.id = `large-img-${regularCount}`;
+
+        largeDiv.appendChild(largeImg);
+        div.appendChild(largeDiv);
+
+        var thumbnailsDiv = document.createElement('div');
+        thumbnailsDiv.style = "padding: 0 10%";
+
+        for (var i = 0; i < webObjectLiteral[c].images.length; i++) {
+            var thumbnailImg = document.createElement('img');
+
+            thumbnailImg.src = `./img/websites/${webObjectLiteral[c].images[i]}.png`;
+            thumbnailImg.style = "height: 50px; width: auto; padding: 5px 5px 0 0;cursor: pointer;";
+            const imgValue = webObjectLiteral[c].images[i];
+            thumbnailImg.addEventListener('click', function() {
+                console.log(imgValue)
+                changeImage(`${imgValue}.png`, regularCount)
+            }, false);
+            thumbnailsDiv.appendChild(thumbnailImg);
+        }
+
+        div.appendChild(thumbnailsDiv);
+
+
+        imgSectionDiv.appendChild(div);
+
+
+        for (var i = 0; i < webObjectLiteral[c].links.length; i++) {
+
+            let ul = document.getElementById(`web-ext-showcase`);
+            let extIcon = '<i style="font-size: .8em" class="fas fa-external-link-alt"></i>';
+            
+            if (webObjectLiteral[c].links[i].github !== "") {
+                var li = document.createElement('li');
+                var a = document.createElement('a');
+                a.href = webObjectLiteral[c].links[i].github;
+                a.innerHTML = `${webObjectLiteral[c].links[i].title} github ${extIcon}`; 
+                a.className = 'github-style';
+                li.appendChild(a);
+                ul.appendChild(li);
+            }
+
+            if (webObjectLiteral[c].links[i].demo !== "") {
+                var li = document.createElement('li');
+                var a = document.createElement('a');
+                a.href = webObjectLiteral[c].links[i].demo;
+                a.innerHTML = `${webObjectLiteral[c].links[i].title} demo ${extIcon}`;
+                a.className = 'demo-style';
+                li.appendChild(a);
+                ul.appendChild(li);
+            }
+        }
 
         subNum = c-1;
         addNum = parseInt(c)+1;
@@ -69,33 +141,77 @@
         document.getElementById("goBack").href = `./web.html?key=${previousPage}`;
         document.getElementById("goForward").href = `./web.html?key=${nextPage}`;
 
-        document.getElementById("web-title").innerHTML = webObjectLiteral[c].title;
+        const icon = (webObjectLiteral[c].type === 'showcase')?'<i style="background: rgb(218, 105, 0); padding: 5px 10px;" class="fas fa-thumbtack"></i>':'';
+
+        document.getElementById("web-title").innerHTML = `${icon} ${webObjectLiteral[c].title}`;
 
         document.getElementById("current-page").innerHTML = webObjectLiteral[c].title;
-        document.getElementById("current-page").href = `./web.html?key=${c}`;
+        document.getElementById("current-page").href = `./web.html?key=${c}`;        
 
         
-
         var ul = document.getElementById("web-bullet-points");
 
-        for (var i = 0; i < webObjectLiteral[c].content[0].description.length; i++) { var singleLi=webObjectLiteral[c].content[0].description[i]; var
-            li=document.createElement('li');
-            li.appendChild(document.createTextNode(singleLi)); ul.appendChild(li); 
-        }
+        for (var i = 0; i < webObjectLiteral[c].content[0].description.length; i++) { 
 
-        var ul = document.getElementById("web-stack");
-
-        for (var i = 0; i < webObjectLiteral[c].stack.length; i++) { 
-
-            var singleLi=webObjectLiteral[c].stack[i].name; 
-            var li=document.createElement('li');
-
-            li.classList.add(webObjectLiteral[c].stack[i].color)
-
+            var singleLi = webObjectLiteral[c].content[0].description[i]; 
+            var li = document.createElement('li');
             li.appendChild(document.createTextNode(singleLi)); 
             ul.appendChild(li); 
+
+        }
+
+        var div = document.getElementById("web-stacks");
+
+        for (var j = 0; j < webObjectLiteral[c].stacks.length; j++) {
+
+            if (j > 0) {
+                var smallerContent = document.createElement('div');
+                smallerContent.className = 'smaller';
+            }
+
+            var ul=document.createElement('ul');
+            ul.id = "web-stack";
+            var p=document.createElement('p')
+            var b=document.createElement('b')
             
+            b.innerHTML = webObjectLiteral[c].stacks[j].title;
+            p.appendChild(b);
+
+            for (var i = 0; i < webObjectLiteral[c].stacks[j].stack.length; i++) { 
+
+                var singleLi=webObjectLiteral[c].stacks[j].stack[i].name;
+                var li=document.createElement('li');
+
+                li.classList.add(webObjectLiteral[c].stacks[j].stack[i].color)
+
+                li.appendChild(document.createTextNode(singleLi)); 
+                ul.appendChild(li); 
+
+            }
+
+            if (j > 0) {
+                smallerContent.appendChild(p);
+                smallerContent.appendChild(ul);
+                div.appendChild(smallerContent);
+            } else {
+                div.appendChild(p);
+                div.appendChild(ul);
+            }
+
         }
     </script>
-</body>
+    </body>
+    <script src="./js/image.js"></script>
+    <script>
+
+        document.getElementById(`zoom-${regularCount}`).addEventListener(
+            "mousemove",
+            function (e) {
+                // let [mainImg, largeImg] = ["main-img", "large-img"];
+                zoomFunction(`zoom-${regularCount}`, e.pageX, e.pageY, `main-img-${regularCount}`, `large-img-${regularCount}`, this.offsetLeft, this.offsetTop)
+            },
+            false
+        );
+
+    </script>
 </html>

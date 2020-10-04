@@ -4,7 +4,7 @@ function changeImage(value, num) {
 
     document.getElementById(`large-img-${num}`).style.background = `url("./img/websites/${value}") no-repeat rgba(32,
     31, 36, 1)`;
-    document.getElementById(`main-img-enlarge-${num}`).href = `./images.html?location=index&image=${value}`;
+    document.getElementById(`main-img-enlarge-${num}`).href = `./images.html?location=web&image=${value}&index=${num-1}`;
 
 }
 
@@ -39,30 +39,3 @@ zoomFunction = (zoom, positionX, positionY, mainImg, largeImg, offsetLeft, offse
     style.left = x - 50 + "px";
     style.top = y - 50 + "px";
 }
-
-document.getElementById("zoom-1").addEventListener(
-    "mousemove",
-    function (e) {
-        // let [mainImg, largeImg] = ["main-img", "large-img"];
-        zoomFunction("zoom-1", e.pageX, e.pageY, "main-img-1", "large-img-1", this.offsetLeft, this.offsetTop)
-    },
-    false
-);
-
-document.getElementById("zoom-2").addEventListener(
-    "mousemove",
-    function (e) {
-        // let [mainImg, largeImg] = ["main-img", "large-img"];
-        zoomFunction("zoom-2", e.pageX, e.pageY, "main-img-2", "large-img-2", this.offsetLeft, this.offsetTop)
-    },
-    false
-);
-
-document.getElementById("zoom-3").addEventListener(
-    "mousemove",
-    function (e) {
-        // let [mainImg, largeImg] = ["main-img", "large-img"];
-        zoomFunction("zoom-3", e.pageX, e.pageY, "main-img-3", "large-img-3", this.offsetLeft, this.offsetTop)
-    },
-    false
-);
