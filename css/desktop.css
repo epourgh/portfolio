@@ -42,4 +42,218 @@
         align-items: center;
         min-height: 100vh;
     }
+
+
+    /* 
+        effects
+     */
+
+    a:hover {
+        text-decoration: none;
+        color: #00D4F1;
+    }
+
+    a:active,
+    a:visited,
+    a:focus {
+        text-decoration: none;
+    }
+
+    .demo-style:hover {
+        background: rgba(200, 200, 200, .4);
+        color: #fff;
+    }
+
+    #about #about-span,
+    #webdev #encompass-webdev,
+    #misc #encompass-misc {
+        visibility: hidden;
+    }
+
+
+    #about #about-span.animated-1,
+    header #encompass.animated-1,
+    #webdev #encompass-webdev.animated-1,
+    #misc #encompass-misc.animated-1 {
+        visibility: visible;
+        -webkit-animation: fadein 3s;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 3s;
+        /* Firefox < 16 */
+        -ms-animation: fadein 3s;
+        /* Internet Explorer */
+        -o-animation: fadein 3s;
+        /* Opera < 12.1 */
+        animation: fadein 3s;
+    }
+
+    #about:hover #about-span,
+    #webdev:hover #encompass-webdev,
+    #misc:hover #encompass-misc {
+        visibility: visible;
+        -webkit-animation: fadein 3s;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 3s;
+        /* Firefox < 16 */
+        -ms-animation: fadein 3s;
+        /* Internet Explorer */
+        -o-animation: fadein 3s;
+        /* Opera < 12.1 */
+        animation: fadein 3s;
+        outline: 0;
+    }
+
+    #about:hover #about-span.animated-2,
+    header:hover #encompass.animated-2,
+    #webdev:hover #encompass-webdev.animated-2,
+    #misc:hover #encompass-misc.animated-2 {
+        -webkit-animation: fadein 0s;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 0s;
+        /* Firefox < 16 */
+        -ms-animation: fadein 0s;
+        /* Internet Explorer */
+        -o-animation: fadein 0s;
+        /* Opera < 12.1 */
+        animation: fadein 0s;
+        outline: 0 !important;
+    }
+
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* Firefox < 16 */
+    @-moz-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* Safari, Chrome and Opera > 12.1 */
+    @-webkit-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* Internet Explorer */
+    @-ms-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* Opera < 12.1 */
+    @-o-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* */
+
+    @keyframes fadeout {
+        from { opacity: 1; }
+        to   { opacity: 0; }
+    }
+
+    /* Firefox < 16 */
+    @-moz-keyframes fadeout {
+        from { opacity: 1; }
+        to   { opacity: 0; }
+    }
+
+    /* Safari, Chrome and Opera > 12.0 */
+    @-webkit-keyframes fadeout {
+        from { opacity: 1; }
+        to   { opacity: 0; }
+    }
+
+    /* Internet Explorer */
+    @-ms-keyframes fadeout {
+        from { opacity: 1; }
+        to   { opacity: 0; }
+    }
+
+    /* Opera < 12.0 */
+    @-o-keyframes fadeout {
+        from { opacity: 1; }
+        to   { opacity: 0; }
+    }
+
+    #webdev:focus,
+    #misc:focus,
+    #metagenre:focus,
+    #about:focus,
+    #webdev:hover,
+    #misc:hover,
+    #metagenre:hover,
+    #about:hover {
+        outline: 0 !important;
+    }
+
+    #social-media:hover #img-top {
+        display: inline;
+    }
+
+    .text:hover {
+        background: rgba(37, 37, 37, 0.6);
+    }
+
+    #image:hover {
+        z-index: -1;
+        -moz-transform: scale(1.025);
+        -webkit-transform: scale(1.025);
+        transform: scale(1.025);
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .tbl-col-misc:hover,
+    .tbl-col-misc-2:hover,
+    .tbl-col-misc-40:hover {
+        background: #ccc;
+    }
+
+    #button:hover {
+        color: #BBD200;
+        background: linear-gradient(to right, rgba(0, 229, 18, .3), rgba(0, 141, 191, .3));
+    }
+
+    .item-0:hover .image-0,
+    .item-1:hover .image-1,
+    .item-2:hover .image-2,
+    .item-3:hover .image-3,
+    .item-4:hover .image-4 {
+        opacity: 0.2;
+    }
+
+    .item-0:hover .middle-0,
+    .item-1:hover .middle-1,
+    .item-2:hover .middle-2,
+    .item-3:hover .middle-3,
+    .item-4:hover .middle-4 {
+        opacity: 1;
+    }
+
+    .magnify-wrapper:hover #large-img-1,
+    .magnify-wrapper:active #large-img-1,
+    .magnify-wrapper:hover #large-img-2,
+    .magnify-wrapper:active #large-img-2,
+    .magnify-wrapper:hover #large-img-3,
+    .magnify-wrapper:active #large-img-3 {
+        opacity: 1;
+    }
+
+    .github-style:hover {
+        background: rgba(200, 200, 0, .8);
+        color: #fff;
+    }
+
+    a:hover span {
+        background: rgb(50, 50, 50);
+    }
 }
