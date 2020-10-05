@@ -12,7 +12,7 @@
     <a id="goBack" class="goBack"><i class="fas fa-chevron-left text home"></i></a>
     <a id="goForward" class="goForward"><i class="fas fa-chevron-right text home"></i></a>
 
-    <a href="./index.html#webdev" class="exitBack" title="return to index"><i class="fas fa-times text home"></i></a>
+    <a href="#" class="exitBack" id="exitBack" title="return to index"><i class="fas fa-times text home"></i></a>
 
     <div class="add-twenty"></div>
 
@@ -142,6 +142,8 @@
         document.getElementById("goForward").href = `./web.html?key=${nextPage}`;
 
         const icon = (webObjectLiteral[c].type === 'showcase')?'<i style="background: rgb(218, 105, 0); padding: 5px 10px;" class="fas fa-thumbtack"></i>':'';
+
+        document.getElementById("exitBack").href = (webObjectLiteral[c].type === 'showcase')?'./index.html#webdev':'./index.html#misc';
 
         document.getElementById("web-title").innerHTML = `${icon} ${webObjectLiteral[c].title}`;
 

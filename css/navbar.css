@@ -1,4 +1,4 @@
-@media screen and (max-width: 5000px) and (min-width: 1001px) {
+@media screen and (max-width: 5000px) and (min-width: 1100px) {
     #left-nav {
         width: 250px;
         height: 100vh;
@@ -9,7 +9,6 @@
         z-index: 999;
     }
 
-    
     #left-nav ul {
         margin: 10px;
     }    
@@ -68,12 +67,13 @@
 
 
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1099px) {
     #left-nav ul h3, #left-nav ul hr, .adjust-ol {
         display: none;
     }
 
     #left-nav {
+        font-size: 1.5em;
         display: block;
         background: #fff;
         padding: 0;
@@ -85,6 +85,7 @@
         padding: 5px;
         vertical-align: text-top;
     }
+    
     #left-nav ul li {
         list-style-type: none;
     }
