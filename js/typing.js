@@ -25,15 +25,18 @@ function animateWords(word, duration, deleteText) {
   var lastArray = word.split('');
 
   duration += 1000;
+  string = '_';
 
   for (i = 0; i < lastArray.length; i++) {
     
     // console.log(duration);
     duration += 125;
 
-    let addition = (i == 0)?'':'+';
 
-    setTimeout(`${lastNameDom}${addition}="${lastArray[i]}";`, duration);
+    string = `${string.substring(0, string.length - 1)}${lastArray[i]}_`;
+    
+
+    setTimeout(`${lastNameDom}="${string}";`, duration);
     
   }
 
@@ -46,18 +49,21 @@ function animateWords(word, duration, deleteText) {
       duration += 125;
       lastArray.pop();
       removeLast = lastArray.join('');
-      removeLast = (removeLast == '') ? '_' :removeLast;
+      removeLast = (removeLast == '') ? '' :removeLast;
 
-      setTimeout(`${lastNameDom} = "${removeLast}";`, duration);
+      setTimeout(`${lastNameDom} = "${removeLast}_";`, duration);
 
     }
+  } else {
+    string = `${string.substring(0, string.length - 1)}`;
+    setTimeout(`${lastNameDom}="${string}";`, duration);
   }
 }
 
 
 var deleteText = true;
-
 duration = 1000;
+
 // console.log(duration);
 animateWords("POURGHAED", duration, deleteText);
 
