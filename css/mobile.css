@@ -20,8 +20,9 @@
         background: rgb(83, 77, 107, .1);
     }
 
-	.item {
-		flex: 0 0 50%;
+	.item, .item-web {
+        flex: 0 0 50%;
+        margin: 0%;
 	}
 
 	.mobile-display {
@@ -60,14 +61,14 @@
 	}
 
 	#GitHub {
-	  display: block;
-		margin: -15px 0 10px 0;
+        display: block;
+        margin: -15px 0 10px 0;
 	}
 
 	#image {
 		width: 90%;
-    height: auto;
-	  margin: 0;
+        height: auto;
+        margin: 0;
 	}
 
 	section ul {
@@ -85,9 +86,13 @@
 }
 
 
-@media screen and (max-width: 600px) and (min-width: 0px) {
+@media screen and (max-width: 800px) and (min-width: 0px) {
 
-    .item {
+    h2 {
+        font-size: 1em;
+    }
+
+    .item, .item-web {
 		flex: 0 0 90%;
 		margin: 1% 5%;
 	}
@@ -265,6 +270,21 @@
 
 	.menu {
 		visibility: visible;
-	}
-}
+    }
 
+    .mobile-adjust-to-two {
+        height: 0;
+    }
+
+    .tbl-row-intro {
+        margin: 3em 0;
+    }
+
+    #large-img-1,
+    #large-img-2,
+    #large-img-3 {
+        display: none;
+    }
+
+
+}
