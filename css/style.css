@@ -256,6 +256,11 @@ logo
 	z-index: 1000;
 }
 
+#mobile-nav-toggle-hamburger,
+#mobile-nav-toggle-exit {
+	display: none;
+}
+
 .goForward {
 	position: fixed;
 	bottom: 2%;
@@ -336,6 +341,12 @@ BODY
 	align-items: center;
 	transition: .25s ease-in;
 	z-index: -1;
+}
+
+.hamburger {
+	width: 75px;
+	height: 75px;
+	font-size: 36px;
 }
 
 /* scroll down chevron */

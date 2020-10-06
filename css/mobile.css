@@ -20,6 +20,7 @@
 
     .scroll_btn {
         background: url(../img/icons/scroll.gif) 50% 50% no-repeat rgba(50, 50, 50, 1);
+        background-size: 90%;
         opacity: .85;
         display: block;
         height: 75px;
@@ -229,6 +230,4 @@
     #large-img-3 {
         display: none;
     }
-
-
 }
