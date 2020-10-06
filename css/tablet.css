@@ -1,0 +1,94 @@
+@media (max-width: 1099px) {
+
+    header,
+    #encompass {
+        height: 100vh;
+    }
+
+    .wallpaper-front {
+        width: 0;
+        height: 0;
+    }
+
+    .wallpaper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding-left: 0;
+        z-index: -4;
+        background: rgb(83, 77, 107, .1);
+    }
+
+    .item,
+    .item-web {
+        flex: 0 0 50%;
+        margin: 0%;
+    }
+
+    .mobile-display {
+        display: block;
+    }
+
+    #encompass,
+    #encompass-webdev,
+    #encompass-misc {
+        height: 100%;
+
+    }
+
+    .encompass-misc {
+        height: 100%;
+    }
+
+    #about #about-span,
+    #webdev #encompass-webdev,
+    #misc #encompass-misc {
+        visibility: visible;
+    }
+
+    .abt-img {
+        display: none;
+    }
+
+    #wrapper {
+        display: none;
+    }
+
+
+    .tbl-col-misc,
+    .tbl-col-misc-2 {
+        width: 33%;
+    }
+
+    .tbl-col-misc-40,
+    .tbl-col-misc-40:hover {
+        background: none;
+        width: 100%;
+    }
+
+    #GitHub {
+        display: block;
+        margin: -15px 0 10px 0;
+    }
+
+    #image {
+        width: 90%;
+        height: auto;
+        margin: 0;
+    }
+
+    section ul {
+        margin: 20px 0;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+
+    .header-text-1,
+    .header-text-2 {
+        font-size: 35px;
+    }
+}

@@ -64,15 +64,18 @@ function animateWords(word, duration, deleteText) {
 var deleteText = true;
 duration = 1000;
 
-// console.log(duration);
 animateWords("POURGHAED", duration, deleteText);
 
-// console.log(duration);
+
 duration = 6000;
-animateWords("WEB_DEVELOPER", duration, deleteText);
+if (screen && screen.width >= 1099) {
+  animateWords("WEB DEVELOPER", duration, deleteText);
+} else {
+  animateWords("WEB DEV", duration, deleteText);
+}
+
 
 var deleteText = false;
 
-// console.log(duration);
 duration = 12000;
 animateWords("POURGHAED", duration, deleteText);

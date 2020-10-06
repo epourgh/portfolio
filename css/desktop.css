@@ -178,18 +178,6 @@
         from { opacity: 1; }
         to   { opacity: 0; }
     }
-
-    #webdev:focus,
-    #misc:focus,
-    #metagenre:focus,
-    #about:focus,
-    #webdev:hover,
-    #misc:hover,
-    #metagenre:hover,
-    #about:hover {
-        outline: 0 !important;
-    }
-
     #social-media:hover #img-top {
         display: inline;
     }
