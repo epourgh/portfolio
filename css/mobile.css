@@ -23,8 +23,8 @@
         background-size: 90%;
         opacity: .85;
         display: block;
-        height: 75px;
-        width: 75px;
+        height: 60px;
+        width: 60px;
         position: absolute;
         bottom: 0;
         background-color: rgb(250, 99, 99);
@@ -137,11 +137,6 @@
         display: inline-block;
     }
 
-    .social-icons {
-        height: 40px;
-        width: auto;
-    }
-
     /* Portrait */
 
     .portrait {
@@ -230,4 +225,33 @@
     #large-img-3 {
         display: none;
     }
+
+    .header-social-mobile-br {
+        display: block;
+        padding: 1%;
+    }
+
+    .social-icons {
+        height: 60px;
+        width: auto;
+    }
+
+    .mobile-no-space {
+        height: 0vh;
+    }
+
+    .add-twenty-four-mobile {
+        margin-top: 1vh;
+        height: 23vh;
+    }
+
+    .add-one-mobile {
+        height: 1vh;
+    }
+
+    .hr-mobile {
+        border-top: 1px solid rgb(38, 36, 42);
+    }
+
+
 }
