@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+
+    
     <title>Emerson Pourghaed</title>
 
     <link href="https://fonts.googleapis.com/css?family=Karla&Fredoka+One" rel="stylesheet">
@@ -24,14 +26,21 @@
     <!-- <nav id="mobile-nav"></nav> -->
     <div id="left-nav">
       <ul>
-        <h3>Portfolio</h3>
+        <li class="mobile-head-nav">
+          <div class="align-exit">
+            <i id="mobile-nav-toggle-exit" class="fas fa-times text"></i>
+          </div>
+          <h3>Portfolio</h3>
+        </li>
         <hr>
         <li>
           <a class="scroll" href="#home" id="home-nav">Home</a>
         </li>
+        <hr class="mobile-nav-hr">
         <li>
           <a class="scroll" href="#about" id="about-nav">About</a>
         </li>
+        <hr class="mobile-nav-hr">
         <li>
           <a class="scroll" href="#webdev" id="webdev-nav">Websites</a>
           <ol class="adjust-ol">
@@ -40,6 +49,7 @@
             <li><a href="./web.html?key=2">Maps</a></li>
           </ol>
         </li>
+        <hr class="mobile-nav-hr">
         <li>
           <a class="scroll" href="#misc" id="misc-nav">Misc</a>
           <ol class="adjust-ol">
@@ -54,12 +64,13 @@
             <li><a href="https://codepen.io/ampourgh/pen/MWYKPqQ" target="_blank">Draggable Interface</a></li>
           </ol>
         </li>
+        <hr class="mobile-nav-hr">
         <li>
           <a class="scroll" href="#end" id="end-nav">End</a>
         </li>
       </ul>
-      <i id="mobile-nav-toggle-exit" class="fas fa-times text"></i>
     </div>
+
     <a id="mobile-nav-toggle-hamburger" class="goBack"><i class="fas fa-bars text hamburger"></i></a>
     
     <span class="wallpaper-front"></span>
@@ -68,291 +79,296 @@
     <a href="#home" id="goHome" class="goHome" title="return to top"><i
         class="fas fa-home text home"></i></a>
 
-    <header>
+    <span class="scrolldown">
+      <a href="#about" id="scroll-down" class="scroll">
+        <span class="scroll_btn border"></span>
+      </a>
+    </span>
 
-      <div id="encompass">
+  
+    <div id="mobile-right-body">
 
-        <div>
-          <div class="add-one-mobile"></div>
-          <div class="add-twenty-five mobile-no-space"></div>
-          <h1 id="first-name" class="App-logo header-text-1"></h1>
-          <h1 id="last-name" class="header-text-2"></h1>
-          <div class="add-twenty-four-mobile hr-mobile"></div>
+      <header>
+
+        <div id="encompass">
+
+          <div>
+            <div class="add-one-mobile"></div>
+            <div class="add-twenty-five mobile-no-space"></div>
+            <h1 id="first-name" class="App-logo header-text-1"></h1>
+            <h1 id="last-name" class="header-text-2"></h1>
+            <div class="add-twenty-four-mobile hr-mobile"></div>
+          </div>
+
+          <br><br>
+
+          <a href="https://github.com/epourgh" id="social-media"><img src="./img/icons/gitHub.svg" class="social-icons"><img src="./img/icons/gitHub_highlight.svg" id="img-top" class="social-icons"></a>
+          <a href="https://www.linkedin.com/in/ampourgh/" id="social-media"><img src="./img/icons/linkedIn.svg" class="social-icons"><img src="./img/icons/linkedIn_highlight.svg" id="img-top" class="social-icons"></a>
+          <span class="header-social-mobile-br"></span>
+          <a href="https://twitter.com/ampourgh" id="social-media"><img src="./img/icons/twitter.svg" class="social-icons"><img src="./img/icons/twitter_highlight.svg" id="img-top" class="social-icons"></a>
+          <a href="mailto:epourgh@gmail.com?Subject=Greetings%20and%20Salutations!" id="social-media"><img src="./img/icons/gmail.svg" class="social-icons"><img src="./img/icons/gmail_highlight.svg" id="img-top" class="social-icons"></a>
+
+          <span class="line-height"></span>
+
+
         </div>
+      </header>
 
-        <br><br>
+      <hr class='hr-styled'>
 
-        <a href="https://github.com/epourgh" id="social-media"><img src="./img/icons/gitHub.svg" class="social-icons"><img src="./img/icons/gitHub_highlight.svg" id="img-top" class="social-icons"></a>
-        <a href="https://www.linkedin.com/in/ampourgh/" id="social-media"><img src="./img/icons/linkedIn.svg" class="social-icons"><img src="./img/icons/linkedIn_highlight.svg" id="img-top" class="social-icons"></a>
-        <span class="header-social-mobile-br"></span>
-        <a href="https://twitter.com/ampourgh" id="social-media"><img src="./img/icons/twitter.svg" class="social-icons"><img src="./img/icons/twitter_highlight.svg" id="img-top" class="social-icons"></a>
-        <a href="mailto:epourgh@gmail.com?Subject=Greetings%20and%20Salutations!" id="social-media"><img src="./img/icons/gmail.svg" class="social-icons"><img src="./img/icons/gmail_highlight.svg" id="img-top" class="social-icons"></a>
+      <div id="first" ></div>
 
-        <span class="line-height"></span>
+      <div id="about">
+        <span id="about-span">
 
-        <span class="scrolldown">
-          <a href="#about" id="scroll-down" class="scroll">
-            <span class="scroll_btn border"></span>
-          </a>
+          <div class="abt-img">
+            <img src="./img/bg/laptop.png">
+          </div>
+
+          <div class="abt-content">
+            <div style="text-align: center;">
+
+              <h2>ABOUT</h2>
+              <ul>
+                <li>
+                  Hi! I'm a Web developer who started out designing CSS templates for message boards and static pages over a decade ago, which translated to my first job as an SEO/web admin for a misc manufacturer. I had briefly programmed with Python for descriptive statistics in graduate school, eventually directing my interest into learning full stack development.
+                </li>
+                <li>
+                  I have since developed projects using the LAMP and the MERN stack, and have experience using APIs, JSON, SQL and NoSQL for data handling.
+                </li>
+              </ul>
+              <br><br><br>
+
+            </div>
+          </div>
+
         </span>
-
       </div>
-    </header>
 
-    <hr class='hr-styled'>
+      <hr class='hr-styled'>
 
-    <div id="first" ></div>
+      <!-- WEB DEVELOPMENT SECTION -->
 
-    <div id="about">
-      <span id="about-span">
+      <!-- Navbar smooth scrolling -->
 
-        <div class="abt-img">
-          <img src="./img/bg/laptop.png">
+      <div id="webdev">
+        <div id="encompass-webdev">
+
+          <h2 style="font-weight: bold; text-align: center;">WEB DEVELOPMENT:</h2>
+          <h3 style="margin-top: 0px; text-align: center;">React • Express • JavaScript • MongoDB • MySQL • HTML • Sass • CSS</h3>
+
+          <hr class="hr-styled" style="margin: 30px 20%;">
+
+          <div class="container">
+            <div class="item item-3 item-web">
+              <a href="./web.html?key=0">
+                <img src="./img/thumbnails/web/metagenre-thumbnail.png" class="image-3">
+                <div class="middle-3">
+                  <div class="text-3">Metagenre</div>
+                </div>
+              </a>
+            </div>
+            <div class="item item-3 item-web">
+              <a href="./web.html?key=1">
+                <img src="./img/thumbnails/web/news-feed-thumbnail.png" class="image-3">
+                <div class="middle-3">
+                  <div class="text-3">News Feed</div>
+                </div>
+              </a>
+            </div>
+            <div class="item item-3 item-web">
+              <a href="./web.html?key=2">
+                <img src="./img/thumbnails/web/maps-thumbnail.png" class="image-3">
+                <div class="middle-3">
+                  <div class="text-3">MAPS</div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="abt-content">
-          <div style="text-align: center;">
+      <hr class='hr-styled'>
 
-            <h2>ABOUT</h2>
+      <!-- GRAPHIC DESIGN SECTION -->
+
+      <!-- Navbar smooth scrolling -->
+      <div id="misc">
+        <div id="encompass-misc" class="encompass-misc">
+          <h2 style="font-weight: bold; text-align: center;">MISC:</h2>
+          <h3 style="margin-top: 0px; text-align: center;">PHP • Python • JavaScript • HTML5 • CSS3</h3>
+
+          <hr class="hr-styled" style="margin: 30px 20%;">
+
+          <div class="container">
+            <div class="item item-0">
+              <a href="./web.html?key=3">
+                <img src="./img/thumbnails/web/usa-auto-col-fixed.png" class="image-0">
+                <div class="middle-0">
+                  <div class="text-0">USASEATCOVERS</div>
+                </div>
+              </a>
+            </div>
+            <div class="item item-0">
+              <a href="./web.html?key=4">
+                <img src="./img/thumbnails/web/catalog-col.png" class="image-0">
+                <div class="middle-0">
+                  <div class="text-0">CATALOG</div>
+                </div>
+              </a>
+            </div>
+            <!-- <div class="item item-1">
+              <a href="./web.html?key=5">
+                <img src="./img/thumbnails/web/RestaurantApp-col.png" class="image-1">
+                <div class="middle-1">
+                  <div class="text-1">RESTAURANT</div>
+                </div>
+              </a>
+            </div> -->
+            <div class="item item-0">
+              <a href="./web.html?key=6">
+                <img src="./img/thumbnails/web/a-z-col-fixed.png" class="image-0">
+                <div class="middle-0">
+                  <div class="text-0">A TO Z</div>
+                </div>
+              </a>
+            </div>
+            <div class="item item-0">
+              <a href="./web.html?key=7">
+                <img src="./img/thumbnails/web/calendar.png" class="image-0">
+                <div class="middle-0">
+                  <div class="text-0">CALENDAR</div>
+                </div>
+              </a>
+            </div>
+            <div class="item item-3">
+              <a href="https://codepen.io/ampourgh/pen/QWwEwOo" target="_blank">
+                <img src="./img/thumbnails/misc/shop.png" class="image-3">
+                <div class="middle-3">
+                  <div class="text-3">SHOP <i style="font-size: .8em" class="fas fa-external-link-alt"></i></div>
+                </div>
+              </a>
+            </div>
+            <div class="item item-0">
+              <a href="https://codepen.io/ampourgh/pen/pooBvEv" target="_blank">
+                <img src="./img/thumbnails/misc/switch.png" class="image-0">
+                <div class="middle-0">
+                  <div class="text-0">SWITCH <i style="font-size: .8em" class="fas fa-external-link-alt"></i></div>
+                </div>
+              </a>
+            </div>
+            <!-- <div class="item item-0">
+              <a href="https://codepen.io/ampourgh/pen/BaNzvxB" target="_blank">
+                <img src="./img/thumbnails/misc/percentage.png" class="image-0">
+                <div class="middle-0">
+                  <div class="text-0">PERCENT <i style="font-size: .8em" class="fas fa-external-link-alt"></i></div>
+                </div>
+              </a>
+            </div> -->
+            <div class="item item-0">
+              <a href="https://codepen.io/ampourgh/pen/MWYKPqQ" target="_blank">
+                <img src="./img/thumbnails/misc/drag.png" class="image-0">
+                <div class="middle-0">
+                  <div class="text-0">DRAG <i style="font-size: .8em" class="fas fa-external-link-alt"></i></div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <hr class='hr-styled'> -->
+
+      <!-- TWITTER WIDGET -->
+      <!-- <div id="twitter" ></div>
+      <a class="twitter-grid" data-partner="tweetdeck" href="https://twitter.com/ampourgh/timelines/1050208014110732288?ref_src=twsrc%5Etfw">Timeline</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+
+
+      <hr class='hr-styled mobile-hr-styled-bottom'>
+
+      <!-- Go back up from bottom of page -->
+      <div id="end"></div>
+
+      <footer class="footer-bg">
+
+        <div class="site-footer">
+
+          <div class="footer-container">
+
+              <div class="item1">
+                <h6>Languages</h6>
+                <ul class="footer-links">
+                  <li><p>JavaScript</p></li>
+                  <li><p>PHP</p></li>
+                  <li><p>Python</p></li>
+                  <li><p>HTML5</p></li>
+                  <li><p>CSS3</p></li>
+                </ul>
+              </div>
+
+              <div class="item2">
+                <h6>Frameworks</h6>
+                <ul class="footer-links">
+                  <li><p>React</p></li>
+                  <li><p>Express/Node.js</p></li>
+                  <li><p>Gatsby</p></li>
+                  <li><p>Bootstrap</p></li>
+                  <li><p>Flask</p></li>
+                </ul>
+              </div>
+
+              <div class="item3">
+                <h6>Databases/Maps</h6>
+                <ul class="footer-links">
+                  <li><p>MySQL</p></li>
+                  <li><p>SQL Server</p></li>
+                  <li><p>MongoDB</p></li>
+                  <li><p>JSON/Object Literals</p></li>
+                  <li><p>GraphQL</p></li>
+                </ul>
+              </div>
+
+              <div class="item4">
+                <h6>Other Skills</h6>
+                <ul class="footer-links">
+                  <li><p>Git Version Control</p></li>
+                  <li><p>AWS Deployment</p></li>
+                  <li><p>API Integration</p></li>
+                  <li><p>Object Oriented Programming</p></li>
+                  <li><p>MVVM/MVC Design Pattern</p></li>
+                </ul>
+              </div>
+            </div>
+
+          <hr class='hr-styled'>
+          <div class="footer-container-social">
             <ul>
-              <li>
-                Hi! I'm a Web developer who started out designing CSS templates for message boards and static pages over a decade ago, which translated to my first job as an SEO/web admin for a misc manufacturer. I had briefly programmed with Python for descriptive statistics in graduate school, eventually directing my interest into learning full stack development.
+              <li class="social-author">
+                <p>2020 Emerson Pourghaed</p>
               </li>
-              <li>
-                I have since developed projects using the LAMP and the MERN stack, and have experience using APIs, JSON, SQL and NoSQL for data handling.
+              
+              <li class="return-to-top">
+                <a title="return to the top" href="#home" id="social-media"><i
+                      class="fas fa-chevron-up text footer-social-media home"></i></a>
+              </li>
+
+              <li class="social-media">
+                <ul class="social-icons">
+                  <li><a href="https://github.com/epourgh" id="social-media"><i class="fab fa-github-alt text footer-social-media home"></i></a>
+                  <li><a href="https://www.linkedin.com/in/ampourgh/" id="social-media"><i
+                        class="fab fa-linkedin-in text footer-social-media home"></i></a>
+                  <li><a href="https://twitter.com/ampourgh" id="social-media"><i
+                        class="fab fa-twitter text footer-social-media home"></i></a>
+                  <li><a href="mailto:epourgh@gmail.com?Subject=Greetings%20and%20Salutations!" id="social-media"><i
+                        class="fab fa-google text footer-social-media home"></i></a>
+                </ul>
               </li>
             </ul>
-            <br><br><br>
-
+            <br>
           </div>
         </div>
-
-      </span>
+      </footer>
     </div>
-
-    <hr class='hr-styled'>
-
-    <!-- WEB DEVELOPMENT SECTION -->
-
-    <!-- Navbar smooth scrolling -->
-
-    <div id="webdev">
-      <div id="encompass-webdev">
-
-        <h2 style="font-weight: bold; text-align: center;">WEB DEVELOPMENT:</h2>
-        <h3 style="margin-top: 0px; text-align: center;">React • Express • JavaScript • MongoDB • MySQL • HTML • Sass • CSS</h3>
-
-        <hr class="hr-styled" style="margin: 30px 20%;">
-
-        <div class="container">
-          <div class="item item-3 item-web">
-            <a href="./web.html?key=0">
-              <img src="./img/thumbnails/web/metagenre-thumbnail.png" class="image-3">
-              <div class="middle-3">
-                <div class="text-3">Metagenre</div>
-              </div>
-            </a>
-          </div>
-          <div class="item item-3 item-web">
-            <a href="./web.html?key=1">
-              <img src="./img/thumbnails/web/news-feed-thumbnail.png" class="image-3">
-              <div class="middle-3">
-                <div class="text-3">News Feed</div>
-              </div>
-            </a>
-          </div>
-          <div class="item item-3 item-web">
-            <a href="./web.html?key=2">
-              <img src="./img/thumbnails/web/maps-thumbnail.png" class="image-3">
-              <div class="middle-3">
-                <div class="text-3">MAPS</div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <hr class='hr-styled'>
-
-    <!-- GRAPHIC DESIGN SECTION -->
-
-    <!-- Navbar smooth scrolling -->
-    <div id="misc">
-      <div id="encompass-misc" class="encompass-misc">
-        <h2 style="font-weight: bold; text-align: center;">MISC:</h2>
-        <h3 style="margin-top: 0px; text-align: center;">PHP • Python • JavaScript • HTML5 • CSS3</h3>
-
-        <hr class="hr-styled" style="margin: 30px 20%;">
-
-        <div class="container">
-          <div class="item item-0">
-            <a href="./web.html?key=3">
-              <img src="./img/thumbnails/web/usa-auto-col-fixed.png" class="image-0">
-              <div class="middle-0">
-                <div class="text-0">USASEATCOVERS</div>
-              </div>
-            </a>
-          </div>
-          <div class="item item-0">
-            <a href="./web.html?key=4">
-              <img src="./img/thumbnails/web/catalog-col.png" class="image-0">
-              <div class="middle-0">
-                <div class="text-0">CATALOG</div>
-              </div>
-            </a>
-          </div>
-          <!-- <div class="item item-1">
-            <a href="./web.html?key=5">
-              <img src="./img/thumbnails/web/RestaurantApp-col.png" class="image-1">
-              <div class="middle-1">
-                <div class="text-1">RESTAURANT</div>
-              </div>
-            </a>
-          </div> -->
-          <div class="item item-0">
-            <a href="./web.html?key=6">
-              <img src="./img/thumbnails/web/a-z-col-fixed.png" class="image-0">
-              <div class="middle-0">
-                <div class="text-0">A TO Z</div>
-              </div>
-            </a>
-          </div>
-          <div class="item item-0">
-            <a href="./web.html?key=7">
-              <img src="./img/thumbnails/web/calendar.png" class="image-0">
-              <div class="middle-0">
-                <div class="text-0">CALENDAR</div>
-              </div>
-            </a>
-          </div>
-          <div class="item item-3">
-            <a href="https://codepen.io/ampourgh/pen/QWwEwOo" target="_blank">
-              <img src="./img/thumbnails/misc/shop.png" class="image-3">
-              <div class="middle-3">
-                <div class="text-3">SHOP <i style="font-size: .8em" class="fas fa-external-link-alt"></i></div>
-              </div>
-            </a>
-          </div>
-          <div class="item item-0">
-            <a href="https://codepen.io/ampourgh/pen/pooBvEv" target="_blank">
-              <img src="./img/thumbnails/misc/switch.png" class="image-0">
-              <div class="middle-0">
-                <div class="text-0">SWITCH <i style="font-size: .8em" class="fas fa-external-link-alt"></i></div>
-              </div>
-            </a>
-          </div>
-          <!-- <div class="item item-0">
-            <a href="https://codepen.io/ampourgh/pen/BaNzvxB" target="_blank">
-              <img src="./img/thumbnails/misc/percentage.png" class="image-0">
-              <div class="middle-0">
-                <div class="text-0">PERCENT <i style="font-size: .8em" class="fas fa-external-link-alt"></i></div>
-              </div>
-            </a>
-          </div> -->
-          <div class="item item-0">
-            <a href="https://codepen.io/ampourgh/pen/MWYKPqQ" target="_blank">
-              <img src="./img/thumbnails/misc/drag.png" class="image-0">
-              <div class="middle-0">
-                <div class="text-0">DRAG <i style="font-size: .8em" class="fas fa-external-link-alt"></i></div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- <hr class='hr-styled'> -->
-
-    <!-- TWITTER WIDGET -->
-    <!-- <div id="twitter" ></div>
-    <a class="twitter-grid" data-partner="tweetdeck" href="https://twitter.com/ampourgh/timelines/1050208014110732288?ref_src=twsrc%5Etfw">Timeline</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-
-
-    <hr class='hr-styled mobile-hr-styled-bottom'>
-
-    <!-- Go back up from bottom of page -->
-    <div id="end"></div>
-
-    <footer class="footer-bg">
-
-      <div class="site-footer">
-
-        <div class="footer-container">
-
-            <div class="item1">
-              <h6>Languages</h6>
-              <ul class="footer-links">
-                <li><p>JavaScript</p></li>
-                <li><p>PHP</p></li>
-                <li><p>Python</p></li>
-                <li><p>HTML5</p></li>
-                <li><p>CSS3</p></li>
-              </ul>
-            </div>
-
-            <div class="item2">
-              <h6>Frameworks</h6>
-              <ul class="footer-links">
-                <li><p>React</p></li>
-                <li><p>Express/Node.js</p></li>
-                <li><p>Gatsby</p></li>
-                <li><p>Bootstrap</p></li>
-                <li><p>Flask</p></li>
-              </ul>
-            </div>
-
-            <div class="item3">
-              <h6>Databases/Maps</h6>
-              <ul class="footer-links">
-                <li><p>MySQL</p></li>
-                <li><p>SQL Server</p></li>
-                <li><p>MongoDB</p></li>
-                <li><p>JSON/Object Literals</p></li>
-                <li><p>GraphQL</p></li>
-              </ul>
-            </div>
-
-            <div class="item4">
-              <h6>Other Skills</h6>
-              <ul class="footer-links">
-                <li><p>Git Version Control</p></li>
-                <li><p>AWS Deployment</p></li>
-                <li><p>API Integration</p></li>
-                <li><p>Object Oriented Programming</p></li>
-                <li><p>MVVM/MVC Design Pattern</p></li>
-              </ul>
-            </div>
-          </div>
-
-        <hr class='hr-styled'>
-        <div class="footer-container-social">
-          <ul>
-            <li class="social-author">
-              <p>2020 Emerson Pourghaed</p>
-            </li>
-            
-            <li class="return-to-top">
-              <a title="return to the top" href="#home" id="social-media"><i
-                    class="fas fa-chevron-up text footer-social-media home"></i></a>
-            </li>
-
-            <li class="social-media">
-              <ul class="social-icons">
-                <li><a href="https://github.com/epourgh" id="social-media"><i class="fab fa-github-alt text footer-social-media home"></i></a>
-                <li><a href="https://www.linkedin.com/in/ampourgh/" id="social-media"><i
-                      class="fab fa-linkedin-in text footer-social-media home"></i></a>
-                <li><a href="https://twitter.com/ampourgh" id="social-media"><i
-                      class="fab fa-twitter text footer-social-media home"></i></a>
-                <li><a href="mailto:epourgh@gmail.com?Subject=Greetings%20and%20Salutations!" id="social-media"><i
-                      class="fab fa-google text footer-social-media home"></i></a>
-              </ul>
-            </li>
-          </ul>
-          <br>
-        </div>
-      </div>
-    </footer>
 
     
     <!-- 
