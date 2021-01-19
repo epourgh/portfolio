@@ -112,7 +112,7 @@ b {
 }
 
 
-.social-icons {
+.header-social-icons, .footer-social-icons {
 	height: 32px;
 	width: auto;
 }

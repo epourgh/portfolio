@@ -84,7 +84,7 @@
     display: inline-block
 }
 
-.site-footer .social-icons {
+.site-footer .header-social-icons, .site-footer .footer-social-icons {
     text-align: right
 }
 
@@ -99,13 +99,13 @@
     height: 30px;
 }
 
-.social-icons {
+.header-social-icons, .footer-social-icons {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none
 }
 
-.social-icons li {
+.header-social-icons, .footer-social-icons li {
     display: inline-block;
     margin-bottom: 4px
 }
@@ -119,7 +119,7 @@
         grid-gap: 0px;
     }
 
-    .social-icons li.title {
+    .header-social-icons li.title, .footer-social-icons li.title {
         display: block;
         margin-right: 0;
         font-weight: 600
@@ -130,7 +130,7 @@
     }
 
     .site-footer .copyright-text,
-    .site-footer .social-icons {
+    .site-footer .header-social-icons, .site-footer .footer-social-icons {
         text-align: center
     }
 
