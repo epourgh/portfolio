@@ -152,15 +152,15 @@ header {
 	display: none;
 }
 
-#encompass,
-#encompass-webdev,
-#encompass-misc {
+#home-encompass,
+#webdev-encompass,
+#misc-encompass {
 	height: 100vh;
 	margin: 0;
 	padding: 0;
 }
 
-header #encompass {
+header #home-encompass {
 	-webkit-animation: fadein 3s;
 	/* Safari, Chrome and Opera > 12.1 */
 	-moz-animation: fadein 3s;
@@ -173,10 +173,10 @@ header #encompass {
 }
 
 
-#about:focus #about-span.animated-2,
-header:focus #encompass.animated-2,
-#webdev:focus #encompass-webdev.animated-2,
-#misc:focus #encompass-misc.animated-2 {
+#about:focus #about-encompass.animated-2,
+header:focus #home-encompass.animated-2,
+#webdev:focus #webdev-encompass.animated-2,
+#misc:focus #misc-encompass.animated-2 {
 	outline: 0 !important;
 }
 
@@ -597,7 +597,7 @@ hr {
 /* ABOUT */
 
 span.abt-img,
-span#about-span {
+span#about-encompass {
 	position: relative;
 	overflow: hidden;
 }
@@ -620,15 +620,15 @@ video {
 	transform: translateX(-50%) translateY(-50%);
 }
 
-span#about-span {
+span#about-encompass {
 	height: auto
 }
 
-span#about-span>div {
+span#about-encompass>div {
 	width: 100%;
 }
 
-span#about-span .abt-content {
+span#about-encompass .abt-content {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -637,7 +637,7 @@ span#about-span .abt-content {
 	align-items: center;
 }
 
-span#about-span .abt-content>div {
+span#about-encompass .abt-content>div {
 	width: 100%;
 	max-width: 55rem;
 	margin: 0 auto;
@@ -645,14 +645,14 @@ span#about-span .abt-content>div {
 }
 
 
-span#about-span .abt-content img {
+span#about-encompass .abt-content img {
 	width: 100%;
 	max-width: 27rem;
 }
 
 
 
-span#about-span .abt-img {
+span#about-encompass .abt-img {
 	position: relative;
 	overflow: hidden;
 	min-height: 48rem;

@@ -90,7 +90,7 @@
 
       <header>
 
-        <div id="encompass">
+        <div id="home-encompass">
 
           <div>
             <div class="add-one-mobile"></div>
@@ -120,7 +120,7 @@
       <div id="first" ></div>
 
       <div id="about">
-        <span id="about-span">
+        <span id="about-encompass">
 
           <div class="abt-img">
             <img src="./img/bg/laptop.png">
@@ -153,7 +153,7 @@
       <!-- Navbar smooth scrolling -->
 
       <div id="webdev">
-        <div id="encompass-webdev">
+        <div id="webdev-encompass">
 
           <h2 style="font-weight: bold; text-align: center;">WEB DEVELOPMENT:</h2>
           <h3 style="margin-top: 0px; text-align: center;">React • Express • JavaScript • MongoDB • MySQL • HTML • Sass • CSS</h3>
@@ -195,7 +195,7 @@
 
       <!-- Navbar smooth scrolling -->
       <div id="misc">
-        <div id="encompass-misc" class="encompass-misc">
+        <div id="misc-encompass" class="misc-encompass">
           <h2 style="font-weight: bold; text-align: center;">MISC:</h2>
           <h3 style="margin-top: 0px; text-align: center;">PHP • Python • JavaScript • HTML5 • CSS3</h3>
 
@@ -290,7 +290,7 @@
       <!-- Go back up from bottom of page -->
       <div id="end"></div>
 
-      <footer class="footer-bg">
+      <footer id="end-encompass" class="footer-bg">
 
         <div class="site-footer">
 
@@ -371,27 +371,15 @@
       </footer>
     </div>
 
-    
-    <!-- 
-    <div class="add-twenty"></div>
-    <div style="text-align: center">
-      <p style="font-size: smaller;">2020 Emerson Pourghaed</p>
-    </div>
-    <div class="chevron">
-      <a href="#home" class="goUp">
-        <i class="fas fa-chevron-up text home"></i>
-      </a>
-    </div> 
-    -->
 
   </body>
   <div id=”content-lg-res”>
     
   </div>
   <script>
-  if (screen && screen.width >= 1099) {
-        document.write('<script src="./js/magnet.js"><\/script>');
-        document.write('<script src="./js/animate.js"><\/script>');
+    if (screen && screen.width >= 1099) {
+      document.write('<script src="./js/magnet.js"><\/script>');
+        document.write('<script src="./js/initialState.js"><\/script>');
   }
   </script> 
   <script src="./js/image.js"></script>

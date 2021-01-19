@@ -16,15 +16,15 @@
         background: linear-gradient(rgba(60, 20, 0, .0), rgba(80, 75, 111 1) 40%);
     }
 
-    span#about-span>div {
+    span#about-encompass>div {
         width: 50%;
     }
 
-    span#about-span .abt-content {
+    span#about-encompass .abt-content {
         margin-left: 50%;
     }
 
-    span#about-span .abt-img {
+    span#about-encompass .abt-img {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -33,7 +33,7 @@
     }
 
     span.abt-img,
-    span#about-span {
+    span#about-encompass {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -64,17 +64,17 @@
         color: #fff;
     }
 
-    #about #about-span,
-    #webdev #encompass-webdev,
-    #misc #encompass-misc {
+    #about #about-encompass,
+    #webdev #webdev-encompass,
+    #misc #misc-encompass {
         visibility: hidden;
     }
 
 
-    #about #about-span.animated-1,
-    header #encompass.animated-1,
-    #webdev #encompass-webdev.animated-1,
-    #misc #encompass-misc.animated-1 {
+    #about #about-encompass.animated-1,
+    header #home-encompass.animated-1,
+    #webdev #webdev-encompass.animated-1,
+    #misc #misc-encompass.animated-1 {
         visibility: visible;
         -webkit-animation: fadein 3s;
         /* Safari, Chrome and Opera > 12.1 */
@@ -87,9 +87,9 @@
         animation: fadein 3s;
     }
 
-    #about:hover #about-span,
-    #webdev:hover #encompass-webdev,
-    #misc:hover #encompass-misc {
+    #about:hover #about-encompass,
+    #webdev:hover #webdev-encompass,
+    #misc:hover #misc-encompass {
         visibility: visible;
         -webkit-animation: fadein 3s;
         /* Safari, Chrome and Opera > 12.1 */
@@ -103,10 +103,10 @@
         outline: 0;
     }
 
-    #about:hover #about-span.animated-2,
-    header:hover #encompass.animated-2,
-    #webdev:hover #encompass-webdev.animated-2,
-    #misc:hover #encompass-misc.animated-2 {
+    #about:hover #about-encompass.animated-2,
+    header:hover #home-encompass.animated-2,
+    #webdev:hover #webdev-encompass.animated-2,
+    #misc:hover #misc-encompass.animated-2 {
         -webkit-animation: fadein 0s;
         /* Safari, Chrome and Opera > 12.1 */
         -moz-animation: fadein 0s;

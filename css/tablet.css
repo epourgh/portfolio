@@ -1,7 +1,7 @@
 @media (max-width: 1099px) {
 
     header,
-    #encompass {
+    #home-encompass {
         height: 100vh;
     }
 
@@ -31,20 +31,20 @@
         display: block;
     }
 
-    #encompass,
-    #encompass-webdev,
-    #encompass-misc {
+    #home-encompass,
+    #webdev-encompass,
+    #misc-encompass {
         height: 100%;
 
     }
 
-    .encompass-misc {
+    .misc-encompass {
         height: 100%;
     }
 
-    #about #about-span,
-    #webdev #encompass-webdev,
-    #misc #encompass-misc {
+    #about #about-encompass,
+    #webdev #webdev-encompass,
+    #misc #misc-encompass {
         visibility: visible;
     }
 

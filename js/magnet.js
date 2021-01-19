@@ -63,6 +63,13 @@ window.addEventListener('scroll', function (event) {
             document.getElementById(`${previousString}-nav`).classList = 'scroll'; 
         }
 
+        var encompass = document.getElementById(`${keyString}-encompass`);
+        encompass.classList.add('animated-1')
+
+        setTimeout(function () {
+            encompass.classList.add('animated-2')
+        }, 1000);
+
         document.getElementById(`${keyString}-nav`).classList = 'scroll active';
 
 
