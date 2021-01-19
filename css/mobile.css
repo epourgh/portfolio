@@ -214,9 +214,22 @@
         padding: 1%;
     }
 
+    .social-media-container {
+        -webkit-transform: rotate(45deg); /* Safari and Chrome */
+        -moz-transform: rotate(45deg);   /* Firefox */
+        -ms-transform: rotate(45deg);   /* IE 9 */
+        -o-transform: rotate(45deg);   /* Opera */
+        transform: rotate(45deg);
+    }
+
     .social-icons {
         height: 60px;
         width: auto;
+        -webkit-transform: rotate(-45deg); /* Safari and Chrome */
+        -moz-transform: rotate(-45deg);   /* Firefox */
+        -ms-transform: rotate(-45deg);   /* IE 9 */
+        -o-transform: rotate(-45deg);   /* Opera */
+        transform: rotate(-45deg);
     }
 
     .mobile-no-space {
