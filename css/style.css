@@ -349,78 +349,6 @@ BODY
 	font-size: 36px;
 }
 
-/* scroll down chevron */
-.scrolldown {
-	text-align: center;
-}
-
-.scroll_btn {
-	background: url(../img/icons/scroll.gif) 50% 50% no-repeat rgba(50, 50, 50, 1);
-	border-radius: 50%;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-opacity: .85;
-	-webkit-opacity: .85;
-	-o-opacity: .85;
-	opacity: .85;
-	display: block;
-	height: 45px;
-	margin: 42px auto;
-	transition: all 500ms ease-in-out 0s;
-	width: 45px;
-	position: absolute;
-	bottom: 0;
-}
-
-.border {
-	position: relative;
-}
-
-.border:before {
-	content: " ";
-	position: absolute;
-	z-index: -1;
-	border-radius: 100%;
-	top: 2px;
-	left: 2px;
-	right: 2px;
-	bottom: 2px;
-	border: 2px solid #fff;
-}
-
-.up {
-	padding-left: 3px;
-	line-height: 45px;
-}
-
-article {
-	margin: 15% 15%;
-}
-
-
-section ul {
-	/*-moz-column-width: 12em;
-  -moz-columns: 12em;
-  -webkit-columns: 12em;
-  columns: 12em;*/
-	margin: -300px 0 0 60%;
-}
-
-#image {
-	padding-left: 0;
-	z-index: -1;
-	width: 400px;
-	height: 200px;
-	border-radius: 5px;
-	cursor: pointer;
-	-moz-transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-	overflow: hidden;
-	max-width: 100%;
-	box-shadow: 0 5px 10px 0 rgba(0, 51, 41, 0.2), 0 6px 22px 0 rgba(0, 51, 41, 0.2);
-}
-
 /*
 MODAL CONTENT
 */
@@ -871,6 +799,64 @@ span#about-span .abt-img {
 }
 
 
+.scroll_btn {
+	background: url(../img/icons/scroll.gif) 50% 50% no-repeat rgba(50, 50, 50, 1);
+	-moz-opacity: .85;
+	-webkit-opacity: .85;
+	-o-opacity: .85;
+	opacity: .85;
+	display: block;
+	height: 45px;
+	transition: all 500ms ease-in-out 0s;
+	width: 45px;
+}
+
+.border {
+	position: relative;
+}
+
+.border:before {
+	content: " ";
+	position: absolute;
+	z-index: -1;
+	top: 2px;
+	left: 2px;
+	right: 2px;
+	bottom: 2px;
+	border: 2px solid #fff;
+}
+
+.up {
+	padding-left: 3px;
+	line-height: 45px;
+}
+
+article {
+	margin: 15% 15%;
+}
+
+
+section ul {
+	/*-moz-column-width: 12em;
+-moz-columns: 12em;
+-webkit-columns: 12em;
+columns: 12em;*/
+	margin: -300px 0 0 60%;
+}
+
+#image {
+	padding-left: 0;
+	z-index: -1;
+	width: 400px;
+	height: 200px;
+	cursor: pointer;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	overflow: hidden;
+	max-width: 100%;
+	box-shadow: 0 5px 10px 0 rgba(0, 51, 41, 0.2), 0 6px 22px 0 rgba(0, 51, 41, 0.2);
+}
 
 
 /*
