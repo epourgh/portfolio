@@ -245,7 +245,12 @@
         background: rgb(50, 50, 50);
     }
 
-    /* scroll down chevron */
+    /*
+
+    Header Scrolldown Chevron
+
+    */
+
     .scrolldown {
         position: relative;
     }

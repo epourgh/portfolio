@@ -798,6 +798,11 @@ span#about-span .abt-img {
 	cursor: pointer;
 }
 
+/*
+
+Header Scrolldown Chevron
+
+*/
 
 .scroll_btn {
 	background: url(../img/icons/scroll.gif) 50% 50% no-repeat rgba(50, 50, 50, 1);
