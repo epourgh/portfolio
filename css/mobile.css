@@ -1,5 +1,10 @@
 @media screen and (max-width: 800px) and (min-width: 0px) {
 
+    #mobile-right-body {
+        margin: 0;
+        padding: 0;
+    }
+
     h2 {
         font-size: 1em;
     }
