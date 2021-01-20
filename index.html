@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/timeline.css">
   </head>
 
   <body>
@@ -32,7 +33,7 @@
           </div>
           <h3>Portfolio</h3>
         </li>
-        <hr>
+        <hr class="mobile-head-nav-hr">
         <li>
           <a class="scroll" href="#home" id="home-nav">Home</a>
         </li>
@@ -51,17 +52,11 @@
         </li>
         <hr class="mobile-nav-hr">
         <li>
-          <a class="scroll" href="#misc" id="misc-nav">Misc</a>
+          <a class="scroll" href="#misc" id="misc-nav">HISTORY</a>
           <ol class="adjust-ol">
-            <li><a href="./web.html?key=3">USA Seat Covers</a></li>
-            <li><a href="./web.html?key=4">Catalog</a></li>
-            <!-- <li><a href="./web.html?key=5">Restaurant</a></li> -->
-            <li><a href="./web.html?key=6">A to Z One Day</a></li>
-            <li><a href="./web.html?key=7">Calendar</a></li>
-            <li><a href="https://codepen.io/ampourgh/pen/QWwEwOo" target="_blank">Single Page Shop</a></li>
-            <li><a href="https://codepen.io/ampourgh/pen/pooBvEv" target="_blank">Switch Animation</a></li>
-            <!-- <li><a href="https://codepen.io/ampourgh/pen/BaNzvxB" target="_blank">Percentage</a></li> -->
-            <li><a href="https://codepen.io/ampourgh/pen/MWYKPqQ" target="_blank">Draggable Interface</a></li>
+            <li><a href="./jobs.html?key=0">Web Admin III</a></li>
+            <li><a href="./jobs.html?key=1">Full Stack Developer</a></li>
+            <li><a href="./jobs.html?key=2">Web Admin/SEO</a></li>
           </ol>
         </li>
         <hr class="mobile-nav-hr">
@@ -155,8 +150,7 @@
       <div id="webdev">
         <div id="webdev-encompass">
 
-          <h2 style="font-weight: bold; text-align: center;">WEB DEVELOPMENT:</h2>
-          <h3 style="margin-top: 0px; text-align: center;">React • Express • JavaScript • MongoDB • MySQL • HTML • Sass • CSS</h3>
+          <h2 style="font-weight: bold; text-align: center;">WEB DEVELOPMENT</h2>
 
           <hr class="hr-styled" style="margin: 30px 20%;">
 
@@ -191,98 +185,65 @@
 
       <hr class='hr-styled'>
 
-      <!-- GRAPHIC DESIGN SECTION -->
-
-      <!-- Navbar smooth scrolling -->
       <div id="misc">
         <div id="misc-encompass" class="misc-encompass">
-          <h2 style="font-weight: bold; text-align: center;">MISC:</h2>
-          <h3 style="margin-top: 0px; text-align: center;">PHP • Python • JavaScript • HTML5 • CSS3</h3>
+          <h2 style="font-weight: bold; text-align: center;">HISTORY</h2>
 
           <hr class="hr-styled" style="margin: 30px 20%;">
 
           <div class="container">
-            <div class="item item-0">
-              <a href="./web.html?key=3">
-                <img src="./img/thumbnails/web/usa-auto-col-fixed.png" class="image-0">
-                <div class="middle-0">
-                  <div class="text-0">USASEATCOVERS</div>
+
+            <ul id='timeline'>
+              <li id="work-li-3" class='work' onClick='onClickPagination(this.id)'>
+                <input class='radio' id='work3' name='works' type='radio' checked>
+                <div class="relative">
+                  <label for='work3'><u>Web Developer III</u></label>
+                  <span class='date'>2019 - 2021</span>
+                  <span class='circle'></span>
                 </div>
-              </a>
-            </div>
-            <div class="item item-0">
-              <a href="./web.html?key=4">
-                <img src="./img/thumbnails/web/catalog-col.png" class="image-0">
-                <div class="middle-0">
-                  <div class="text-0">CATALOG</div>
+                <div class='content'>
+                  <img src="./img/jobs/txdmv.png" class="job-icon">
+                  <p>
+                    Developed intranet pages and managed external pages.
+                  </p>
+                  <p>JavaScript, PHP, Git version control</p>
                 </div>
-              </a>
-            </div>
-            <!-- <div class="item item-1">
-              <a href="./web.html?key=5">
-                <img src="./img/thumbnails/web/RestaurantApp-col.png" class="image-1">
-                <div class="middle-1">
-                  <div class="text-1">RESTAURANT</div>
+              </li>
+              <li  id="work-li-2" class='work' onClick='onClickPagination(this.id)'>
+                <input class='radio' id='work2' name='works' type='radio'>
+                <div class="relative">
+                  <label for='work2'><u>Full Stack Developer</u></label>
+                  <span class='date'>Q2-Q3 2018</span>
+                  <span class='circle'></span>
                 </div>
-              </a>
-            </div> -->
-            <div class="item item-0">
-              <a href="./web.html?key=6">
-                <img src="./img/thumbnails/web/a-z-col-fixed.png" class="image-0">
-                <div class="middle-0">
-                  <div class="text-0">A TO Z</div>
+                <div class='content'>
+                  <img src="./img/jobs/eit.png" class="job-icon">
+                  <p>
+                    Created web admin panel that sent data to iOS and Android app.
+                  </p>
+                  <p>Vue.js, SQL Server, PHP, IIS</p>
                 </div>
-              </a>
-            </div>
-            <div class="item item-0">
-              <a href="./web.html?key=7">
-                <img src="./img/thumbnails/web/calendar.png" class="image-0">
-                <div class="middle-0">
-                  <div class="text-0">CALENDAR</div>
+              </li>
+              <li  id="work-li-1" class='work' onClick='onClickPagination(this.id)'>
+                <input class='radio' id='work1' name='works' type='radio'>
+                <div class="relative">
+                  <label for='work1'><u>Web Admin / SEO Analyst</u></label>
+                  <span class='date'>2011 - 2015</span>
+                  <span class='circle'></span>
                 </div>
-              </a>
-            </div>
-            <div class="item item-3">
-              <a href="https://codepen.io/ampourgh/pen/QWwEwOo" target="_blank">
-                <img src="./img/thumbnails/misc/shop.png" class="image-3">
-                <div class="middle-3">
-                  <div class="text-3">SHOP <i style="font-size: .8em" class="fas fa-external-link-alt"></i></div>
+                <div class='content'>
+                  <img src="./img/jobs/premiumgraphicx.jpg" class="job-icon long-job-icon">
+                  <p>
+                    Design and managed client side pages for graphic manufacturing company.
+                  </p>
+                  <p>HTML5, CSS3, Google Analytics, Adobe Creative Suite</p>
                 </div>
-              </a>
-            </div>
-            <div class="item item-0">
-              <a href="https://codepen.io/ampourgh/pen/pooBvEv" target="_blank">
-                <img src="./img/thumbnails/misc/switch.png" class="image-0">
-                <div class="middle-0">
-                  <div class="text-0">SWITCH <i style="font-size: .8em" class="fas fa-external-link-alt"></i></div>
-                </div>
-              </a>
-            </div>
-            <!-- <div class="item item-0">
-              <a href="https://codepen.io/ampourgh/pen/BaNzvxB" target="_blank">
-                <img src="./img/thumbnails/misc/percentage.png" class="image-0">
-                <div class="middle-0">
-                  <div class="text-0">PERCENT <i style="font-size: .8em" class="fas fa-external-link-alt"></i></div>
-                </div>
-              </a>
-            </div> -->
-            <div class="item item-0">
-              <a href="https://codepen.io/ampourgh/pen/MWYKPqQ" target="_blank">
-                <img src="./img/thumbnails/misc/drag.png" class="image-0">
-                <div class="middle-0">
-                  <div class="text-0">DRAG <i style="font-size: .8em" class="fas fa-external-link-alt"></i></div>
-                </div>
-              </a>
-            </div>
+              </li>
+            </ul>
+
           </div>
         </div>
       </div>
-
-      <!-- <hr class='hr-styled'> -->
-
-      <!-- TWITTER WIDGET -->
-      <!-- <div id="twitter" ></div>
-      <a class="twitter-grid" data-partner="tweetdeck" href="https://twitter.com/ampourgh/timelines/1050208014110732288?ref_src=twsrc%5Etfw">Timeline</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 
 
       <hr class='hr-styled mobile-hr-styled-bottom'>
@@ -386,4 +347,5 @@
   <script src="./js/scroll.js"></script>
   <script src="./js/typing.js"></script>
   <script src="./js/nav.js"></script>
+  <script src="./js/timeline.js"></script>
 </html>

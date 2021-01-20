@@ -5,6 +5,24 @@
         height: 100vh;
     }
 
+    nav ul {
+        margin: 0;
+    }
+
+    .mobile-head-nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobile-head-nav-hr  {
+        margin-top: 0;
+    }
+
+    .hr-styled {
+        padding: 0;
+        margin: 0;
+    }
+
     .wallpaper-front {
         width: 0;
         height: 0;
@@ -111,5 +129,11 @@
         left: 0;
         right: 0;
         text-align: center;
+    }
+
+    .tbl-col-front-end-l img {
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
 }

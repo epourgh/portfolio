@@ -1,0 +1,156 @@
+
+#timeline {
+    list-style: none;
+    margin: 50px 0 30px 120px;
+    padding-left: 30px;
+    border-left: 8px solid #fff;
+}
+
+#timeline>li {
+    margin: 10px 0;
+    position: relative;
+    list-style-type: none;
+}
+
+#timeline>p {
+    margin: 0 0 15px;
+}
+
+#timeline>.work>.relative>.date {
+    margin-top: -10px;
+    top: 50%;
+    left: -185px;
+    font-size: 0.95em;
+    line-height: 20px;
+    position: absolute;
+    color: #fff;
+}
+
+#timeline>.work>.relative>.circle {
+    margin-top: -10px;
+    top: 50%;
+    cursor: pointer;
+    left: -44px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+}
+
+
+#timeline>.work>.content {
+    max-height: 20px;
+    padding: 100px 20px 0;
+    border-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0.5em;
+    position: relative;
+    background: rgba(0, 0, 0, 0);
+}
+
+#timeline>.work>.content::before,
+#timeline>.work>.content::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    position: absolute;
+    pointer-events: none;
+    right: 100%
+}
+
+#timeline>.work>.content::before {
+    border-right-color: inherit;
+    border-width: 20px;
+    top: 50%;
+    margin-top: -20px;
+    background: rgba(0,0,0,0)
+}
+
+#timeline>.work>.content::after {
+    border-right-color: #fff;
+    border-width: 17px;
+    top: 50%;
+    margin-top: -17px;
+}
+
+#timeline>.work>.content>p {
+    color: transparent;
+    text-align: justify;
+    word-break: break-word;
+    hyphens: auto;
+    overflow: hidden;
+    font-weight: 300;
+    font-size: .8em;
+}
+
+#timeline>.work>.content>.job-icon {
+    display: none;
+    width: 75px;
+    height: auto;
+    position: absolute;
+    top: .5em;
+    right: 1em;
+}
+
+#timeline>.work>.content>.long-job-icon {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 1.5em;
+    right: 1em;
+}
+
+#timeline>.work>.relative>label {
+    font-weight: 900;
+    font-size: 1em;
+    position: absolute;
+    z-index: 100;
+    cursor: pointer;
+    top: 1.8em;
+    left: 1em;
+    transition: transform 0.2s linear;
+    color: #fff;
+}
+
+#timeline>.work>.radio {
+    display: none
+}
+
+#timeline>.work>.radio:checked+.relative>label {
+    cursor: auto;
+    transform: translateX(42px);
+    color: #000;
+}
+
+#timeline>.work>.radio:checked+.relative>.circle {
+    background: rgb(255, 145, 0);
+    left: -49px;
+    width: 20px;
+    height: 20px;
+}
+
+#timeline>.work>.radio:checked~.content {
+    max-height: 100%;
+    border-color: #000;
+    margin-right: 20px;
+    transform: translateX(20px);
+    transition: max-height 0.4s linear border-color 0.5s linear transform 0.2s linear;
+    background: #fff;
+    color: #000;
+}
+
+#timeline>.work>.radio:checked~.content>p {
+    max-height: 200px;
+    color: #000;
+    transition: color 0.3s linear 0.3s;
+    padding: 1em;
+}
+
+#timeline>.work>.radio:checked~.content>.job-icon {
+    display: block;
+}

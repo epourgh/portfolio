@@ -88,8 +88,8 @@ subNum = c - 1;
 addNum = parseInt(c) + 1;
 console.log(subNum)
 console.log(addNum)
-let previousPage = (subNum > 0 && subNum < 6) ? subNum : (subNum < 0) ? 5 : 0;
-let nextPage = (addNum > 0 && addNum < 6) ? addNum : (addNum > 5) ? 0 : 5;
+let previousPage = (subNum > 0 && subNum < 3) ? subNum : (subNum < 0) ? 2 : 0;
+let nextPage = (addNum > 0 && addNum < 3) ? addNum : (addNum > 2) ? 0 : 2;
 
 document.getElementById("goBack").href = `./web.html?key=${previousPage}`;
 document.getElementById("goForward").href = `./web.html?key=${nextPage}`;
