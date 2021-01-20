@@ -11,8 +11,8 @@
 
     #left-nav ul {
         margin: 10px;
-    }    
-    
+    }
+
     #left-nav ul h3 {
         text-transform: uppercase;
         letter-spacing: 5px;
@@ -44,7 +44,7 @@
 
     #left-nav ul li a:hover {
         color: rgb(0, 0, 0);
-    } 
+    }
 
     #left-nav ul li .active {
         font-size: 1.5em;
@@ -75,7 +75,7 @@
     .adjust-ol {
         display: none;
     }
-    
+
     .mobile-head-nav {
         background: rgb(27, 26, 31);
         color: #fff;
@@ -104,12 +104,12 @@
         left: 0vw;
         transition: left .7s;
     }
-    
+
     #left-nav ul li {
         list-style-type: none;
         padding: 15px;
     }
-    
+
     #left-nav ul li h3 {
         text-transform: uppercase;
         letter-spacing: 5px;
