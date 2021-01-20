@@ -158,6 +158,10 @@
     #timeline {
         margin: 0px 0 30px 0px;
     }
+
+    #timeline>.work>.relative>label {
+        top: 3.6em;
+    }
     
     #timeline>.work>.content {
         max-height: 200px;
