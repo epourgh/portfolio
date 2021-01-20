@@ -208,25 +208,28 @@
         display: none;
     }
 
+    #home-encompass {
+        position: relative;
+    }
+
+    .social-media-container {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 3em;
+    }
+
     .header-social-mobile-br {
         display: block;
         padding: 1%;
     }
 
-    .social-media-container {
+    .header-social-icons {
         -webkit-transform: rotate(45deg); /* Safari and Chrome */
         -moz-transform: rotate(45deg);   /* Firefox */
         -ms-transform: rotate(45deg);   /* IE 9 */
         -o-transform: rotate(45deg);   /* Opera */
         transform: rotate(45deg);
-    }
-
-    .header-social-icons {
-        -webkit-transform: rotate(-45deg); /* Safari and Chrome */
-        -moz-transform: rotate(-45deg);   /* Firefox */
-        -ms-transform: rotate(-45deg);   /* IE 9 */
-        -o-transform: rotate(-45deg);   /* Opera */
-        transform: rotate(-45deg);
         width: 2.5em;
         height: auto;
     }
