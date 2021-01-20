@@ -190,6 +190,7 @@
     }
 
     #timeline>.work>.radio:checked+.relative>label {
+         top: 1.8em;
         text-align: center;
         transform: translateX(-10px);
         width: 100%;

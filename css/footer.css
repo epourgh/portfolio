@@ -120,10 +120,8 @@
         grid-gap: 0px;
     }
 
-    .header-social-icons li.title, .footer-social-icons li.title {
-        display: block;
-        margin-right: 0;
-        font-weight: 600
+    .footer-social-media {
+        display: none
     }
 
     .site-footer {
