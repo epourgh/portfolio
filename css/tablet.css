@@ -1,5 +1,9 @@
 @media (max-width: 1099px) {
 
+    * {
+        overflow-x: hidden;
+    }
+
     header,
     #home-encompass {
         height: 100vh;

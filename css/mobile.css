@@ -22,7 +22,7 @@
     }
 
     .hr-styled {
-        margin: 5% 0;
+        margin: 2% 0;
     }
 
     .item,
@@ -225,7 +225,6 @@
     #home-encompass {
         position: relative;
     }
-
     .social-media-container {
         position: absolute;
         bottom: 0;
