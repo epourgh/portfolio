@@ -9,10 +9,12 @@ mobileNavToggle = () => {
         console.log('was none')
         nav.style.left = "0vw";
         rightBody.style.left = "75vw";
+        nav.style.boxShadow = "2px 0px 5px rgba(0, 0, 0, .3)";
         hamburger.style.display = "none";
     } else {
         hamburger.style.display = "block";
         nav.style.left = "-75vw";
+        nav.style.boxShadow = "0 0 0 rgba(0, 0, 0, 0)";
         rightBody.style.left = "0vw";
     }
 

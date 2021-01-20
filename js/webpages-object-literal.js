@@ -18,10 +18,12 @@ const webObjectLiteral = [
                 stack: [
                     {name: 'React', color: 'stack-frontend'},
                     {name: 'Hooks', color: 'stack-frontend'},
+                    {name: 'JWT', color: 'stack-frontend'},
                     {name: 'Express/Node', color: 'stack-backend'},
                     {name: 'MySQL', color: 'stack-db'},
                     {name: 'Sass', color: 'stack-css'},
-                    {name: 'AWS', color: 'stack-deployment'},
+                    {name: 'Docker', color: 'stack-deployment'},
+                    {name: 'AWS Elastic Beanstalk', color: 'stack-deployment'},
                     {name: 'Nginx', color: 'stack-deployment'}
                 ]
             }
@@ -37,7 +39,10 @@ const webObjectLiteral = [
     {
         title: 'News Feed',
         type: 'showcase',
-        images: ['newsfeed_1'],
+        images: [
+            'newsfeed_1', 
+            'newsfeed_2'
+        ],
         links: [{
             title: '',
             demo: 'https://epourgh.github.io/news-feed/',
