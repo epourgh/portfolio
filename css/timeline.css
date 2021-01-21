@@ -3,6 +3,7 @@
     margin: 50px 0 30px 120px;
     padding-left: 30px;
     border-left: 8px solid #fff;
+    margin-left: 10em;
 }
 
 #timeline>li {
@@ -155,8 +156,11 @@
 }
 
 @media (max-width:800px) {
+
     #timeline {
         margin: 0px 0 30px 0px;
+        overflow-x: visible;
+        margin-left: 0em;
     }
 
     #timeline>.work>.relative>label {

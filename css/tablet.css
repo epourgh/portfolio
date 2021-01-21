@@ -1,6 +1,7 @@
 @media (max-width: 1099px) {
 
     html {
+        width: 100%;
         overflow-x: hidden;
     }
 

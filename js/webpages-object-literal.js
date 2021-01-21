@@ -9,7 +9,7 @@ const webObjectLiteral = [
         ],
         links: [{
             title: '',
-            demo: 'http://18.225.9.206/',
+            demo: 'http://metadocker-env.eba-gjizgyh3.us-east-2.elasticbeanstalk.com/',
             github: 'https://github.com/epourgh/metagenre'
         }],
         stacks: [
@@ -116,7 +116,8 @@ const webObjectLiteral = [
         content: [{
             description: [
                 'Using Google Maps, placed map markers around the city of Houston of specific locations recommended for locals and tourists to visit.',
-                'Left of map is a filter functionality of the locations, and each marker displays Wikipedia information when clicked.'
+                'Left of map is a filter functionality of the locations, and each marker displays Wikipedia information when clicked.',
+                'Reworked project from knockout.js MVVM to JavaScript ESC6+ to React.'
             ]
         }]
     }

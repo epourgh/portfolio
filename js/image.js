@@ -1,5 +1,4 @@
 function changeImage(value, num) {
-    console.log(value)
     document.getElementById(`main-img-${num}`).src = `./img/websites/${value}`;
 
     document.getElementById(`large-img-${num}`).style.background = `url("./img/websites/${value}") no-repeat rgba(32,
