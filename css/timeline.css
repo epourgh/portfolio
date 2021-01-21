@@ -10,6 +10,8 @@
     margin: 10px 0;
     position: relative;
     list-style-type: none;
+    overflow-x:visible;
+
 }
 
 #timeline>p {
@@ -50,6 +52,7 @@
     border-radius: 0.5em;
     position: relative;
     background: rgba(0, 0, 0, 0);
+    overflow-x:visible;
 }
 
 #timeline>.work>.content::before,

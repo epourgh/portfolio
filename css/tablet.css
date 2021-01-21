@@ -1,8 +1,11 @@
 @media (max-width: 1099px) {
 
+    * {
+        overflow-x: hidden;
+    }
+
     html {
         width: 100%;
-        overflow-x: hidden;
     }
 
     header,
