@@ -79,11 +79,11 @@ const webObjectLiteral = [
         links: [{
             title: 'v3',
             demo: '',
-            github: 'https://github.com/epourgh/Neighborhood-Map/tree/master/v3'
+            github: 'https://github.com/epourgh/neighborhood-map/tree/master/v3'
         }, {
             title: 'v2',
-            demo: 'https://epourgh.github.io/Neighborhood-Map/v2/',
-            github: 'https://github.com/epourgh/Neighborhood-Map/tree/master/v2'
+            demo: 'https://epourgh.github.io/neighborhood-map/v2/',
+            github: 'https://github.com/epourgh/neighborhood-map/tree/master/v2'
         }],
         stacks: [{
                     title: 'version 3 Stack',
