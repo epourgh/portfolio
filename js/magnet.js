@@ -76,11 +76,15 @@ window.addEventListener('scroll', function (event) {
         previousString = keyString;
         topPos = keyValues[keyString];
 
-        window.scroll({
-            top: topPos,
-            behavior: 'smooth'
-        });
+        /*
+        setTimeout(function () {
+            window.scroll({
+                top: topPos,
+                behavior: 'smooth'
+            });
+        }, 1000);
+        */
 
-    }, 66);
+    }, 50);
 
 }, false);
