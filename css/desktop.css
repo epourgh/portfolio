@@ -232,7 +232,9 @@
     .magnify-wrapper:hover #large-img-2,
     .magnify-wrapper:active #large-img-2,
     .magnify-wrapper:hover #large-img-3,
-    .magnify-wrapper:active #large-img-3 {
+    .magnify-wrapper:active #large-img-3,
+    .magnify-wrapper:hover #large-img-4,
+    .magnify-wrapper:active #large-img-4 {
         opacity: 1;
     }
 

@@ -120,5 +120,33 @@ const webObjectLiteral = [
                 'Reworked project from knockout.js MVVM to JavaScript ESC6+ to React.'
             ]
         }]
+    },
+    {
+        title: 'Role Playing Game',
+        type: 'showcase',
+        images: [
+            'rpg_1',
+            'rpg_2',
+            'rpg_3',
+            'rpg_4'
+        ],
+        links: [{
+            title: '',
+            demo: 'https://epourgh.github.io/role-playing-game/',
+            github: 'https://github.com/epourgh/role-playing-game'
+        }],
+        stacks: [{
+                    title: '',
+                    stack: [
+                        {name: 'javascript', color: 'stack-frontend'},
+                        {name: 'css', color: 'stack-css'}                    
+                    ]
+                }],
+        content: [{
+            description: [
+                'Vanilla JavaScript single page application visualized in styled divs.',
+                'Includes character progression, items to equip and consume, NPC interactions, enemy encounters, a map to check character\'s location, and various buildings that the character can enter.',
+            ]
+        }]
     }
 ];
